@@ -1,0 +1,35 @@
+Description:
+------------
+This hexcopy is a driver that takes input as binary file and 
+create a hex file as output.
+The driver name is: hexcopy
+
+Compile:
+--------
+To compile the driver for x86:
+# make
+
+To compile the driver for ARM:
+# make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+Also, for ARM you need to set the correct kernel source path
+
+Test:
+-----
+To test the driver, follow these steps:
+a) Install the driver:
+# sudo insmod hexcopydrv.ko
+This will install the driver in /dev
+The driver path will be: /dev/hexcopy
+
+b) Create an image file using dd command:
+# dd if=/dev/urandom of=image2.bin bs=1M count=1
+
+c) To execute the test, do this:
+# cat image2.bin > /dev/hexcopy
+This will create the hex output file: /tmp/output
+
+d) Another way to test is, using dd command:
+# dd if=image.bin of=/dev/hexcopy bs=<file size in bytes> count=1
+
+If we compare the output with hexdump command, both output will be exactly same.
+This driver is tested on both x86 and ARM with atmost 1MB of image file.
