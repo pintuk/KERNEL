@@ -1,0 +1,1 @@
+make ARCH=arm CROSS_COMPILE=/home/pintu/tizen-sdk/tools/arm-linux-gnueabi-gcc-4.6/bin/arm-linux-gnueabi-

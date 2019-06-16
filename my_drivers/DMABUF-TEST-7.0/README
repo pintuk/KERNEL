@@ -1,0 +1,7 @@
+DMABUF : Buffer Sharing Mechanism : A sample kernel module
+==========================================================
+This contains a sample utility for verifying DMABUF buffer sharing in kernel space using 2 sample drivers.
+The folder contains 2 sample kernel drivers : exporterA and importerB.
+The exporterA is the exporter of the buffer. Here the buffer is allocated using CMA techniques.
+The importerB is one of the user of the buffer created by exporterA.
+

@@ -1,0 +1,13 @@
+#ifndef _CRASHGEN_H
+#define _CRASHGEN_H
+
+#define CRASHGEN_MAGIC		'K'
+#define CRASH_IOC_PTR_NONE	_IOWR(CRASHGEN_MAGIC, 1, int)
+#define CRASH_IOC_A		_IOWR(CRASHGEN_MAGIC, 2, int)
+#define CRASH_IOC_B		_IOWR(CRASHGEN_MAGIC, 3, int)
+#define CRASH_IOC_C		_IOWR(CRASHGEN_MAGIC, 4, int)
+
+
+
+
+#endif

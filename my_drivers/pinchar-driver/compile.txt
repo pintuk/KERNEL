@@ -1,0 +1,2 @@
+make ARCH=arm CROSS_COMPILE=/opt/toolchains/arm-2009q3/bin/arm-none-linux-gnueabi-
+make ARCH=arm CROSS_COMPILE=/scratchbox/compilers/arm-linux-gnueabi-gcc4.4.1-glibc2.11.1/bin/arm-none-linux-gnueabi-

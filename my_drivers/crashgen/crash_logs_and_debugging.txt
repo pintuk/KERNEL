@@ -1,0 +1,108 @@
+<6>[ 9006.189208]  [0:app_crashgen.ou: 2278] [CRASHGEN]: Device opened....
+<6>[ 9006.189270]  [0:app_crashgen.ou: 2278] [CRASHGEN]: CRASH_IOC_PTR_NONE:
+<1>[ 9006.189300]  [0:app_crashgen.ou: 2278] Unable to handle kernel NULL pointer dereference at virtual address 00000004
+<1>[ 9006.189300]  [0:app_crashgen.ou: 2278] pgd = ed220000
+<1>[ 9006.189331]  [0:app_crashgen.ou: 2278] [00000004] *pgd=aba8a831, *pte=00000000, *ppte=00000000
+<0>[ 9006.189361]  [0:app_crashgen.ou: 2278] Internal error: Oops: 817 [#1] PREEMPT SMP ARM
+<4>[ 9006.189361]  [0:app_crashgen.ou: 2278] Modules linked in: crashgen(O)[start=0xbf004000,size=2181] [last unloaded: crashgen]
+<4>[ 9006.189392]  [0:app_crashgen.ou: 2278] CPU: 0 PID: 2278 Comm: app_crashgen.ou Tainted: G           O 3.10.65-00353-g305f0f1 #1-Tizen
+<4>[ 9006.189422]  [0:app_crashgen.ou: 2278] task: eb1c6600 ti: ece74000 task.ti: ece74000
+<4>[ 9006.189453]  [0:app_crashgen.ou: 2278] PC is at crashgen_ioctl+0x34/0x58 [crashgen]
+<4>[ 9006.189483]  [0:app_crashgen.ou: 2278] LR is at crashgen_ioctl+0x2c/0x58 [crashgen]
+<4>[ 9006.189514]  [0:app_crashgen.ou: 2278] pc : [<bf004094>]    lr : [<bf00408c>]    psr: 600d0013
+<4>[ 9006.189514]  [0:app_crashgen.ou: 2278] sp : ece75f10  ip : 00000000  fp : 00000000
+<4>[ 9006.189544]  [0:app_crashgen.ou: 2278] r10: 00000000  r9 : ece74000  r8 : 00000003
+<4>[ 9006.189575]  [0:app_crashgen.ou: 2278] r7 : 00000003  r6 : ede716c0  r5 : 00000000  r4 : e778ba30
+<4>[ 9006.189575]  [0:app_crashgen.ou: 2278] r3 : 00000000  r2 : 00000043  r1 : 00000007  r0 : 0000001f
+<4>[ 9006.189605]  [0:app_crashgen.ou: 2278] Flags: nZCv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment user
+<4>[ 9006.189636]  [0:app_crashgen.ou: 2278] Control: 10c53c7d  Table: ad22006a  DAC: 00000015
+<4>[ 9006.189636]  [0:app_crashgen.ou: 2278] 
+<4>[ 9006.189636]  [0:app_crashgen.ou: 2278] SP: 0xece75e90:
+<4>[ 9006.189666]  [0:app_crashgen.ou: 2278] 5e90  00000000 00000000 00000000 00000000 c0bd46c2 0000001f 00000000 00000001
+<4>[ 9006.189697]  [0:app_crashgen.ou: 2278] 5eb0  00000001 bf004094 600d0013 ffffffff ece75efc c000edd8 0000001f 00000007
+<4>[ 9006.189727]  [0:app_crashgen.ou: 2278] 5ed0  00000043 00000000 e778ba30 00000000 ede716c0 00000003 00000003 ece74000
+<4>[ 9006.189788]  [0:app_crashgen.ou: 2278] 5ef0  00000000 00000000 00000000 ece75f10 bf00408c bf004094 600d0013 ffffffff
+<4>[ 9006.189819]  [0:app_crashgen.ou: 2278] 5f10  bf004060 c011848c 00000004 ede716c0 00000001 ece75f4c c0044b01 00000003
+<4>[ 9006.189849]  [0:app_crashgen.ou: 2278] 5f30  00000000 c01f9f94 00000400 00000001 eea97550 eef64908 ece75f4c c06f536f
+<4>[ 9006.189880]  [0:app_crashgen.ou: 2278] 5f50  00000000 00000000 00000000 ede716c0 00000000 00000000 c0044b01 00000003
+<4>[ 9006.189910]  [0:app_crashgen.ou: 2278] 5f70  ece74000 00000000 00000000 c0118554 00000003 00000000 00000000 00008501
+<4>[ 9006.189941]  [0:app_crashgen.ou: 2278] 
+<4>[ 9006.189941]  [0:app_crashgen.ou: 2278] R4: 0xe778b9b0:
+<4>[ 9006.189971]  [0:app_crashgen.ou: 2278] b9b0  e778b9b0 e778b9b0 00000000 00000000 00000000 00000000 c06dff00 000200da
+<4>[ 9006.190002]  [0:app_crashgen.ou: 2278] b9d0  c0b106f0 00000000 e778b9d8 e778b9d8 00000000 e778b9e4 e778b9e4 00000000
+<4>[ 9006.190032]  [0:app_crashgen.ou: 2278] b9f0  56fe25f4 00000000 00000000 00000000 e778bd18 82002020 00000000 00200000
+<4>[ 9006.190093]  [0:app_crashgen.ou: 2278] ba10  00000000 00000000 e778ba18 e778ba18 e778ba20 e778ba20 00050005 00000000
+<4>[ 9006.190124]  [0:app_crashgen.ou: 2278] ba30  00052180 00000000 00000000 00000000 00000000 00000000 c06dfe80 eeae0000
+<4>[ 9006.190155]  [0:app_crashgen.ou: 2278] ba50  e778bb0c e2caf9b0 000081b6 00000001 00a0000d 00000000 00000000 00000000
+<4>[ 9006.190185]  [0:app_crashgen.ou: 2278] ba70  56fe28c8 1fe21c6d 56fe28c8 1fe21c6d 56fe28c8 1fe21c6d 00040004 00000000
+<4>[ 9006.190216]  [0:app_crashgen.ou: 2278] ba90  0000000c 00000000 00000000 00000000 00000000 00000000 00000001 00000000
+<4>[ 9006.190246]  [0:app_crashgen.ou: 2278] 
+<4>[ 9006.190246]  [0:app_crashgen.ou: 2278] R6: 0xede71640:
+<4>[ 9006.190277]  [0:app_crashgen.ou: 2278] 1640  00000000 00000000 00000000 00000000 eca9c180 00000000 00000000 00000000
+<4>[ 9006.190307]  [0:app_crashgen.ou: 2278] 1660  00000000 00000000 00000000 00000000 ffffffff ffffffff 00000000 00000000
+<4>[ 9006.190338]  [0:app_crashgen.ou: 2278] 1680  edba6280 c5a11c80 ede71688 ede71688 ede71690 ede71690 c5a98104 00000000
+<4>[ 9006.190368]  [0:app_crashgen.ou: 2278] 16a0  00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190399]  [0:app_crashgen.ou: 2278] 16c0  ec487b40 c16ceeac eea97550 eef64908 e778ba30 bf0041ac 00000000 00000000
+<4>[ 9006.190460]  [0:app_crashgen.ou: 2278] 16e0  00000001 00000002 0000001f 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190490]  [0:app_crashgen.ou: 2278] 1700  00000000 00000000 00000000 00000000 edb70480 00000000 00000000 00000000
+<4>[ 9006.190521]  [0:app_crashgen.ou: 2278] 1720  00000000 00000000 00000000 00000000 ffffffff ffffffff 00000000 00000000
+<4>[ 9006.190551]  [0:app_crashgen.ou: 2278] 
+<4>[ 9006.190551]  [0:app_crashgen.ou: 2278] R9: 0xece73f80:
+<4>[ 9006.190582]  [0:app_crashgen.ou: 2278] 3f80  00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190612]  [0:app_crashgen.ou: 2278] 3fa0  00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190643]  [0:app_crashgen.ou: 2278] 3fc0  00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190673]  [0:app_crashgen.ou: 2278] 3fe0  00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<4>[ 9006.190704]  [0:app_crashgen.ou: 2278] 4000  00000000 00000001 00000000 eb1c6600 c0b1ae78 00000000 00000015 eb1c6600
+<4>[ 9006.190734]  [0:app_crashgen.ou: 2278] 4020  c16ca380 ece74000 ecb18a80 ecf48880 eea5dfd0 00000000 ece75d9c ece75d10
+<4>[ 9006.190765]  [0:app_crashgen.ou: 2278] 4040  c06d2044 00000000 00000000 00000000 00000000 00000000 01000000 00000000
+<4>[ 9006.190795]  [0:app_crashgen.ou: 2278] 4060  b6fc84c0 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+<0>[ 9006.190856]  [0:app_crashgen.ou: 2278] Process app_crashgen.ou (pid: 2278, stack limit = 0xece74238)
+<0>[ 9006.190856]  [0:app_crashgen.ou: 2278] Stack: (0xece75f10 to 0xece76000)
+<0>[ 9006.190887]  [0:app_crashgen.ou: 2278] 5f00:                                     bf004060 c011848c 00000004 ede716c0
+<0>[ 9006.190917]  [0:app_crashgen.ou: 2278] 5f20: 00000001 ece75f4c c0044b01 00000003 00000000 c01f9f94 00000400 00000001
+<0>[ 9006.190948]  [0:app_crashgen.ou: 2278] 5f40: eea97550 eef64908 ece75f4c c06f536f 00000000 00000000 00000000 ede716c0
+<0>[ 9006.190979]  [0:app_crashgen.ou: 2278] 5f60: 00000000 00000000 c0044b01 00000003 ece74000 00000000 00000000 c0118554
+<0>[ 9006.190979]  [0:app_crashgen.ou: 2278] 5f80: 00000003 00000000 00000000 00008501 00000000 00008405 00000036 c000f404
+<0>[ 9006.191009]  [0:app_crashgen.ou: 2278] 5fa0: 00000000 c000f280 00008501 00000000 00000003 c0044b01 00000000 00000003
+<0>[ 9006.191040]  [0:app_crashgen.ou: 2278] 5fc0: 00008501 00000000 00008405 00000036 00000000 00000000 b6fce000 00000000
+<0>[ 9006.191070]  [0:app_crashgen.ou: 2278] 5fe0: b6ede410 bece4c64 000084c5 b6ede41c 600d0010 00000003 00000000 00000000
+<4>[ 9006.191101]  [0:app_crashgen.ou: 2278] [<bf004094>] (crashgen_ioctl+0x34/0x58 [crashgen]) from [<c011848c>] (do_vfs_ioctl+0x5a4/0x61c)
+<4>[ 9006.191162]  [0:app_crashgen.ou: 2278] [<c011848c>] (do_vfs_ioctl+0x5a4/0x61c) from [<c0118554>] (SyS_ioctl+0x50/0x6c)
+<4>[ 9006.191192]  [0:app_crashgen.ou: 2278] [<c0118554>] (SyS_ioctl+0x50/0x6c) from [<c000f280>] (ret_fast_syscall+0x0/0x30)
+<0>[ 9006.191192]  [0:app_crashgen.ou: 2278] Code: e59f0024 eb5b18cf e3a03000 e3a02043 (e5832004) 
+<4>[ 9006.191223]  [0:app_crashgen.ou: 2278] ---[ end trace 6d1731443d08f497 ]---
+<0>[ 9006.191253]  [0:app_crashgen.ou: 2278] Kernel panic - not syncing: Fatal exception
+
+
+===================================
+sh-3.2# gdb crashgen.ko
+
+(gdb) disassemble crashgen_ioctl
+Dump of assembler code for function crashgen_ioctl:
+   0x00000060 <+0>:     push    {r3, lr}
+   0x00000064 <+4>:     ldr     r3, [pc, #64]   ; 0xac <crashgen_ioctl+76>
+   0x00000068 <+8>:     cmp     r1, r3
+   0x0000006c <+12>:    beq     0x84 <crashgen_ioctl+36>
+   0x00000070 <+16>:    bcc     0x9c <crashgen_ioctl+60>
+   0x00000074 <+20>:    add     r3, r3, #3
+   0x00000078 <+24>:    cmp     r1, r3
+   0x0000007c <+28>:    bhi     0x9c <crashgen_ioctl+60>
+   0x00000080 <+32>:    b       0xa4 <crashgen_ioctl+68>
+   0x00000084 <+36>:    ldr     r0, [pc, #36]   ; 0xb0 <crashgen_ioctl+80>
+   0x00000088 <+40>:    bl      0x88 <crashgen_ioctl+40>
+   0x0000008c <+44>:    mov     r3, #0
+   0x00000090 <+48>:    mov     r2, #67 ; 0x43
+   0x00000094 <+52>:    str     r2, [r3, #4]
+   0x00000098 <+56>:    b       0xa4 <crashgen_ioctl+68>
+   0x0000009c <+60>:    ldr     r0, [pc, #16]   ; 0xb4 <crashgen_ioctl+84>
+   0x000000a0 <+64>:    bl      0xa0 <crashgen_ioctl+64>
+   0x000000a4 <+68>:    mov     r0, #0
+   0x000000a8 <+72>:    pop     {r3, pc}
+   0x000000ac <+76>:    andgt   r4, r4, r1, lsl #22
+   0x000000b0 <+80>:    andeq   r0, r0, pc, ror r0
+   0x000000b4 <+84>:    andeq   r0, r0, r2, lsr #1
+---Type <return> to continue, or q <return> to quit---q
+Quit
+(gdb) list *0x00000094
+0x94 is in crashgen_ioctl (/home/pintu/SISO_WORK/HQ_GIT/SLP_WORK/MY_DRIVERS/crashgen/crashgen.c:75).
+==================================

@@ -1,0 +1,2 @@
+EXPORT: /scratchbox/compilers/arm-linux-gnueabi-gcc4.4.1-glibc2.11.1/bin/arm-none-linux-gnueabi-gcc -o dmabuf_export_user.out dmabuf_export_user.c ipcsocket.c
+IMPORT: /scratchbox/compilers/arm-linux-gnueabi-gcc4.4.1-glibc2.11.1/bin/arm-none-linux-gnueabi-gcc -o dmabuf_import_user.out dmabuf_import_user.c ipcsocket.c
