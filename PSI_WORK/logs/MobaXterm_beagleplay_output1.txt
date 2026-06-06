@@ -1,0 +1,1246 @@
+Pre-authentication banner message from server:
+| Debian GNU/Linux 11
+|
+| BeagleBoard.org Debian Bullseye Xfce Image 2023-02-04
+| Support: https://bbb.io/debian
+| default username:password is [debian:temppwd]
+|
+End of banner message from server
+debian@192.168.1.14's password:
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon May 11 02:11:31 2026 from 192.168.1.8
+
+
+
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ killall -9 simulate_load.sh
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ ps ax
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ds     3:36 /sbin/init
+      2 ?        S      0:00 [kthreadd]
+      3 ?        S      0:00 [pool_workqueue_release]
+      4 ?        I<     0:00 [kworker/R-rcu_gp]
+      5 ?        I<     0:00 [kworker/R-sync_wq]
+      6 ?        I<     0:00 [kworker/R-kvfree_rcu_reclaim]
+      7 ?        I<     0:00 [kworker/R-slub_flushwq]
+      8 ?        I<     0:00 [kworker/R-netns]
+     13 ?        I<     0:00 [kworker/R-mm_percpu_wq]
+     14 ?        S      0:01 [ksoftirqd/0]
+     15 ?        I      0:15 [rcu_sched]
+     16 ?        S      0:00 [rcu_exp_par_gp_kthread_worker/0]
+     17 ?        S      0:00 [rcu_exp_gp_kthread_worker]
+     18 ?        S      0:10 [migration/0]
+     19 ?        S      0:00 [cpuhp/0]
+     20 ?        S      0:00 [cpuhp/1]
+     21 ?        S      0:10 [migration/1]
+     22 ?        S      0:00 [ksoftirqd/1]
+     25 ?        S      0:00 [cpuhp/2]
+     26 ?        S      0:10 [migration/2]
+     27 ?        S      0:00 [ksoftirqd/2]
+     30 ?        S      0:00 [cpuhp/3]
+     31 ?        S      0:10 [migration/3]
+     32 ?        S      0:01 [ksoftirqd/3]
+     34 ?        I<     0:00 [kworker/3:0H-kblockd]
+     35 ?        S      0:00 [kdevtmpfs]
+     36 ?        I<     0:00 [kworker/R-inet_frag_wq]
+     37 ?        I      0:00 [rcu_tasks_kthread]
+     38 ?        S      0:00 [kauditd]
+     40 ?        S      0:00 [khungtaskd]
+     41 ?        S      0:00 [oom_reaper]
+     42 ?        I<     0:00 [kworker/R-writeback]
+     43 ?        S      0:07 [kcompactd0]
+     44 ?        SN     0:00 [ksmd]
+     45 ?        I<     0:00 [kworker/R-kblockd]
+     46 ?        I<     0:00 [kworker/R-blkcg_punt_bio]
+     47 ?        I<     0:00 [kworker/R-kintegrityd]
+     50 ?        I<     0:00 [kworker/R-tpm_dev_wq]
+     52 ?        I<     0:00 [kworker/R-edac-poller]
+     53 ?        I<     0:00 [kworker/R-devfreq_wq]
+     54 ?        S      0:00 [watchdogd]
+     56 ?        I<     0:00 [kworker/R-quota_events_unbound]
+     57 ?        I<     0:00 [kworker/R-rpciod]
+     58 ?        I<     0:00 [kworker/R-xprtiod]
+     60 ?        S      0:02 [kswapd0]
+     61 ?        I<     0:00 [kworker/R-nfsiod]
+     62 ?        I<     0:00 [kworker/R-cryptd]
+     63 ?        I<     0:00 [kworker/R-kthrotld]
+     64 ?        I<     0:00 [kworker/R-kpcitest]
+     65 ?        I<     0:00 [kworker/R-kpcintb]
+     67 ?        I<     0:00 [kworker/R-nvme-wq]
+     68 ?        I<     0:00 [kworker/R-nvme-reset-wq]
+     69 ?        I<     0:00 [kworker/R-nvme-delete-wq]
+     70 ?        I<     0:00 [kworker/R-vfio-irqfd-cleanup]
+     71 ?        I<     0:00 [kworker/R-uas]
+     72 ?        I<     0:00 [kworker/R-mld]
+     73 ?        I<     0:00 [kworker/R-ipv6_addrconf]
+     74 ?        I<     0:00 [kworker/R-kstrp]
+     75 ?        I<     0:00 [kworker/u17:0]
+     77 ?        I<     0:00 [kworker/R-sdhci]
+     79 ?        S      0:00 [irq/16-mmc0]
+     80 ?        S      0:00 [irq/25-4900000.i2c]
+     82 ?        S      0:00 [irq/26-20000000.i2c]
+     83 ?        S      0:00 [irq/27-tps65219_irq]
+     87 ?        S      0:00 [irq/77-20010000.i2c]
+     88 ?        S      0:00 [irq/78-20020000.i2c]
+     89 ?        S      0:00 [irq/79-20030000.i2c]
+     95 ?        S      0:00 [spi0]
+     97 ?        I<     0:00 [kworker/R-mmc_complete]
+     98 ?        S      0:00 [ptp0]
+     99 ?        S      0:00 [irq/294-8000000.ethernet]
+    101 ?        S      0:00 [irq/296-2b1f0000.rtc]
+    105 ?        S      0:20 [sugov:0]
+    106 ?        S      0:00 [irq/365-2-004c]
+    107 ?        S      0:00 [card0-crtc0]
+    112 ?        I<     0:00 [kworker/R-sdhci]
+    113 ?        S      0:00 [irq/478-mmc2]
+    115 ?        I<     0:00 [kworker/R-sdhci]
+    116 ?        S      0:00 [irq/479-mmc1]
+    118 ?        S      0:00 [irq/473-fa00000.mmc cd]
+    243 ?        R      0:10 [jbd2/mmcblk0p2-8]
+    244 ?        I<     0:00 [kworker/R-ext4-rsv-conversion]
+    282 ?        I<     0:00 [kworker/1:1H-kblockd]
+    294 ?        Ss     1:35 /lib/systemd/systemd-journald
+    315 ?        Ss     0:01 /lib/systemd/systemd-udevd
+    328 ?        Ss     0:06 /lib/systemd/systemd-networkd
+    383 ?        S      0:00 [irq/480-2b10000.audio-controller_rx]
+    384 ?        S      0:00 [irq/481-2b10000.audio-controller_tx]
+    419 ?        Ss     0:08 /lib/systemd/systemd-resolved
+    424 ?        Ssl    0:01 /lib/systemd/systemd-timesyncd
+    476 ?        I<     0:00 [kworker/R-cfg80211]
+    479 ?        Ss     0:08 avahi-daemon: running [BeaglePlay.local]
+    482 ?        Ss     0:00 /usr/sbin/cron -f
+    483 ?        Ss     1:35 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    493 ?        Ssl    0:25 /usr/sbin/rsyslogd -n -iNONE
+    496 ?        Ss     0:21 /lib/systemd/systemd-logind
+    501 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+    502 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+    515 ?        S      0:00 avahi-daemon: chroot helper
+    584 ?        I<     0:00 [kworker/R-wl12xx_wq]
+    585 ?        Ssl    2:25 /usr/bin/containerd
+    600 ?        Ssl    0:01 /usr/libexec/polkitd --no-debug
+    612 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+    627 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    628 ?        S      0:00 [irq/370-wl18xx]
+    629 ttyGS0   Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyGS0 vt220
+    630 ttyS2    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS2 vt220
+    634 ?        Ss     0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+    635 ?        S      0:00 nginx: worker process
+    636 ?        S      0:00 nginx: worker process
+    637 ?        S      0:00 nginx: worker process
+    639 ?        S      0:00 nginx: worker process
+    650 ?        Ss     0:01 /sbin/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -Dnl80211,wext -iwlan0
+    664 ?        Ssl    1:32 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+    682 ?        Ss     0:01 /usr/sbin/hostapd -B -P /run/hostapd.pid /etc/hostapd/hostapd.conf
+    861 ?        S      0:00 [file-storage]
+    862 ?        S      0:00 [irq/490-dwc3]
+   1296 ?        SNsl   0:02 /usr/libexec/rtkit-daemon
+   5380 ?        I<     0:01 [kworker/2:2H-kblockd]
+  65286 ?        I<     0:00 [kworker/1:2H-kblockd]
+  82216 ?        I<     0:00 [kworker/3:1H-kblockd]
+  82801 ?        I<     0:00 [kworker/2:0H-kblockd]
+  85237 ?        I<     0:00 [kworker/0:0H-kblockd]
+  91073 ?        I      0:03 [kworker/u16:1-events_freezable_pwr_efficient]
+  95123 ?        I      0:01 [kworker/u16:3-events_freezable_pwr_efficient]
+ 100206 ?        I      0:00 [kworker/u16:0-events_freezable_pwr_efficient]
+ 100254 ?        I      0:00 [kworker/1:0-events]
+ 100427 ?        I      0:01 [kworker/2:2-events]
+ 100622 ?        I      0:00 [kworker/0:2-dio/mmcblk0p2]
+ 100737 ?        Ss     0:00 sshd: debian [priv]
+ 100741 ?        Ss     0:00 /lib/systemd/systemd --user
+ 100742 ?        I      0:00 [kworker/3:3-cgroup_release]
+ 100743 ?        S      0:00 (sd-pam)
+ 100757 ?        Ssl    0:00 /usr/bin/pipewire
+ 100758 ?        Ssl    0:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+ 100762 ?        Ss     0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 100763 ?        S      0:00 sshd: debian@pts/0
+ 100764 ?        Sl     0:00 /usr/bin/pipewire-media-session
+ 100766 pts/0    Ss+    0:00 -bash
+ 100960 ?        I      0:00 [kworker/1:1-cgroup_free]
+ 101028 ?        I      0:00 [kworker/2:0-events]
+ 101278 ?        I      0:00 [kworker/0:0-dio/mmcblk0p2]
+ 101295 ?        I      0:00 [kworker/3:0-events]
+ 101384 ?        I<     0:00 [kworker/0:2H-kblockd]
+ 101480 ?        I      0:00 [kworker/u16:2-ext4-rsv-conversion]
+ 101645 ?        I      0:00 [kworker/1:2-mm_percpu_wq]
+ 101820 ?        I      0:00 [kworker/3:1-events]
+ 101891 ?        I      0:00 [kworker/2:1-cgroup_free]
+ 101924 ?        I      0:00 [kworker/0:1-dio/mmcblk0p2]
+ 101952 pts/0    SL     0:00 stress-ng -a 3 --cpu-load 80 --timeout 1m
+ 102023 ?        I      0:00 [kworker/u16:4-flush-179:0]
+ 102029 ?        I<     0:00 [kworker/R-dio/mmcblk0p2]
+ 102134 ?        I<     0:00 [kworker/0:1H-kblockd]
+ 102170 ?        I      0:00 [kworker/0:3-dio/mmcblk0p2]
+ 102183 ?        I      0:00 [kworker/u16:5-events_freezable_pwr_efficient]
+ 102233 ?        I      0:00 [kworker/u16:6-events_freezable_pwr_efficient]
+ 102236 ?        I      0:00 [kworker/u16:7-ext4-rsv-conversion]
+ 102255 ?        I      0:00 [kworker/0:4-dio/mmcblk0p2]
+ 102256 ?        I      0:00 [kworker/0:5-dio/mmcblk0p2]
+ 102257 ?        I      0:00 [kworker/0:6-dio/mmcblk0p2]
+ 102258 ?        I      0:00 [kworker/0:7-dio/mmcblk0p2]
+ 102259 ?        I      0:00 [kworker/0:8-dio/mmcblk0p2]
+ 102260 ?        I      0:00 [kworker/0:9-dio/mmcblk0p2]
+ 102267 ?        I      0:00 [kworker/0:10-dio/mmcblk0p2]
+ 102292 ?        I      0:00 [kworker/0:11-dio/mmcblk0p2]
+ 102293 ?        I      0:00 [kworker/0:12-dio/mmcblk0p2]
+ 102294 ?        I      0:00 [kworker/0:13-events]
+ 102310 ?        I      0:00 [kworker/u16:8-ext4-rsv-conversion]
+ 102519 ?        I      0:00 [kworker/0:14-events]
+ 102520 ?        I      0:00 [kworker/0:15-dio/mmcblk0p2]
+ 102521 ?        I      0:00 [kworker/0:16-dio/mmcblk0p2]
+ 102522 ?        I      0:00 [kworker/0:17-dio/mmcblk0p2]
+ 102523 ?        I      0:00 [kworker/0:18-dio/mmcblk0p2]
+ 102524 ?        I      0:00 [kworker/0:19-dio/mmcblk0p2]
+ 102525 ?        I      0:00 [kworker/0:20-dio/mmcblk0p2]
+ 102526 ?        I      0:00 [kworker/0:21-dio/mmcblk0p2]
+ 102527 ?        I      0:00 [kworker/0:22-dio/mmcblk0p2]
+ 102528 ?        I      0:00 [kworker/0:23-dio/mmcblk0p2]
+ 102529 ?        I      0:00 [kworker/0:24-dio/mmcblk0p2]
+ 102530 ?        I      0:00 [kworker/0:25-dio/mmcblk0p2]
+ 102531 ?        I      0:00 [kworker/0:26-dio/mmcblk0p2]
+ 102532 ?        I      0:00 [kworker/0:27-dio/mmcblk0p2]
+ 102533 ?        I      0:00 [kworker/0:28-dio/mmcblk0p2]
+ 102534 ?        I      0:00 [kworker/0:29-dio/mmcblk0p2]
+ 102535 ?        I      0:00 [kworker/0:30-dio/mmcblk0p2]
+ 102536 ?        I      0:00 [kworker/0:31-dio/mmcblk0p2]
+ 102537 ?        I      0:00 [kworker/0:32-dio/mmcblk0p2]
+ 102538 ?        I      0:00 [kworker/0:33-dio/mmcblk0p2]
+ 102539 ?        I      0:00 [kworker/0:34-dio/mmcblk0p2]
+ 102540 ?        I      0:00 [kworker/0:35-dio/mmcblk0p2]
+ 102541 ?        I      0:00 [kworker/0:36-dio/mmcblk0p2]
+ 102542 ?        I      0:00 [kworker/0:37-dio/mmcblk0p2]
+ 102543 ?        I      0:00 [kworker/0:38-dio/mmcblk0p2]
+ 102544 ?        I      0:00 [kworker/0:39-dio/mmcblk0p2]
+ 102545 ?        I      0:00 [kworker/0:40-dio/mmcblk0p2]
+ 102546 ?        I      0:00 [kworker/0:41-dio/mmcblk0p2]
+ 102547 ?        I      0:00 [kworker/0:42-dio/mmcblk0p2]
+ 102548 ?        I      0:00 [kworker/0:43-dio/mmcblk0p2]
+ 102549 ?        I      0:00 [kworker/0:44-dio/mmcblk0p2]
+ 102550 ?        I      0:00 [kworker/0:45-dio/mmcblk0p2]
+ 102551 ?        I      0:00 [kworker/0:46-dio/mmcblk0p2]
+ 102552 ?        I      0:00 [kworker/0:47-dio/mmcblk0p2]
+ 102553 ?        I      0:00 [kworker/0:48-dio/mmcblk0p2]
+ 102554 ?        I      0:00 [kworker/0:49-dio/mmcblk0p2]
+ 102555 ?        I      0:00 [kworker/0:50-dio/mmcblk0p2]
+ 102556 ?        I      0:00 [kworker/0:51-events]
+ 102557 ?        I      0:00 [kworker/0:52-dio/mmcblk0p2]
+ 102558 ?        I      0:00 [kworker/0:53-dio/mmcblk0p2]
+ 102559 ?        I      0:00 [kworker/0:54-dio/mmcblk0p2]
+ 102560 ?        I      0:00 [kworker/0:55-dio/mmcblk0p2]
+ 102561 ?        I      0:00 [kworker/0:56-dio/mmcblk0p2]
+ 102562 ?        I      0:00 [kworker/0:57-dio/mmcblk0p2]
+ 102563 ?        I      0:00 [kworker/0:58-dio/mmcblk0p2]
+ 102564 ?        I      0:00 [kworker/0:59-dio/mmcblk0p2]
+ 102565 ?        I      0:00 [kworker/0:60-dio/mmcblk0p2]
+ 102566 ?        I      0:00 [kworker/0:61-dio/mmcblk0p2]
+ 102567 ?        I      0:00 [kworker/0:62-dio/mmcblk0p2]
+ 102568 ?        I      0:00 [kworker/0:63-dio/mmcblk0p2]
+ 102569 ?        I      0:00 [kworker/0:64-dio/mmcblk0p2]
+ 102662 ?        I      0:00 [kworker/0:65-dio/mmcblk0p2]
+ 102663 ?        I      0:00 [kworker/0:66-dio/mmcblk0p2]
+ 102665 ?        I      0:00 [kworker/0:67-dio/mmcblk0p2]
+ 102666 ?        I      0:00 [kworker/0:68-dio/mmcblk0p2]
+ 102667 ?        I      0:00 [kworker/0:69-dio/mmcblk0p2]
+ 102668 ?        I      0:00 [kworker/0:70-dio/mmcblk0p2]
+ 102669 ?        I      0:00 [kworker/0:71-dio/mmcblk0p2]
+ 102670 ?        I      0:00 [kworker/0:72-dio/mmcblk0p2]
+ 102671 ?        I      0:00 [kworker/0:73-dio/mmcblk0p2]
+ 102672 ?        I      0:00 [kworker/0:74-dio/mmcblk0p2]
+ 102673 ?        I      0:00 [kworker/0:75-dio/mmcblk0p2]
+ 102675 ?        I      0:00 [kworker/0:76-dio/mmcblk0p2]
+ 102678 ?        I      0:00 [kworker/0:77-dio/mmcblk0p2]
+ 102679 ?        I      0:00 [kworker/0:78-dio/mmcblk0p2]
+ 102681 ?        I      0:00 [kworker/0:79-dio/mmcblk0p2]
+ 102682 ?        I      0:00 [kworker/0:80-dio/mmcblk0p2]
+ 102683 ?        I      0:00 [kworker/0:81-dio/mmcblk0p2]
+ 102684 ?        I      0:00 [kworker/0:82-dio/mmcblk0p2]
+ 102685 ?        I      0:00 [kworker/0:83-dio/mmcblk0p2]
+ 102686 ?        I      0:00 [kworker/0:84-dio/mmcblk0p2]
+ 102688 ?        I      0:00 [kworker/0:85-events]
+ 102689 ?        I      0:00 [kworker/0:86-dio/mmcblk0p2]
+ 102690 ?        I      0:00 [kworker/0:87-dio/mmcblk0p2]
+ 102691 ?        I      0:00 [kworker/0:88-dio/mmcblk0p2]
+ 102698 ?        I      0:00 [kworker/0:89-dio/mmcblk0p2]
+ 102702 ?        I      0:00 [kworker/0:90-dio/mmcblk0p2]
+ 102703 ?        I      0:00 [kworker/0:91-dio/mmcblk0p2]
+ 102705 ?        I      0:00 [kworker/0:92-dio/mmcblk0p2]
+ 102707 ?        I      0:00 [kworker/0:93-dio/mmcblk0p2]
+ 102711 ?        I      0:00 [kworker/0:94-dio/mmcblk0p2]
+ 102713 ?        I      0:00 [kworker/0:95-dio/mmcblk0p2]
+ 102715 ?        I      0:00 [kworker/0:96-dio/mmcblk0p2]
+ 102717 ?        I      0:00 [kworker/0:97-dio/mmcblk0p2]
+ 102721 ?        I      0:00 [kworker/0:98-dio/mmcblk0p2]
+ 103226 pts/0    SLl    0:05 ffmpeg -i video1.mp4 -f null /home/debian
+ 103230 pts/0    SLl    0:04 ffmpeg -i video1.mp4 -f null /home/debian
+ 103260 ?        I      0:00 [kworker/u16:9-ext4-rsv-conversion]
+ 103267 ?        I      0:00 [kworker/u16:10-pm]
+ 103332 ?        I      0:00 [kworker/u16:11-events_freezable_pwr_efficient]
+ 103435 ?        I<     0:00 [kworker/3:2H-kblockd]
+ 103455 ?        I      0:00 [kworker/0:99-rcu_gp]
+ 103606 ?        I<     0:00 [kworker/2:1H-kblockd]
+ 103677 pts/0    Sl     0:24 ./psi_user_test
+ 103697 ?        I<     0:00 [kworker/1:0H-kblockd]
+ 103995 pts/0    S      0:00 stress-ng-filename [run]
+ 104008 pts/0    D      0:00 stress-ng-flock [run]
+ 104009 pts/0    D      0:00 stress-ng-flock [run]
+ 104017 pts/0    D      0:00 stress-ng-flock [run]
+ 104022 pts/0    R      0:01 stress-ng-fork [run]
+ 104043 pts/0    S      0:00 stress-ng-fork [run]
+ 104044 pts/0    S      0:00 stress-ng-fork [run]
+ 104056 pts/0    R      0:05 stress-ng-fp-error [run]
+ 104057 pts/0    R      0:03 stress-ng-fp-error [run]
+ 104062 pts/0    R      0:05 stress-ng-fp-error [run]
+ 104070 pts/0    Rl     0:03 stress-ng-fstat [run]
+ 104071 pts/0    R      0:03 stress-ng-fstat [run]
+ 104072 pts/0    R      0:03 stress-ng-fstat [run]
+ 104087 pts/0    R      0:02 stress-ng-full [run]
+ 104088 pts/0    R      0:02 stress-ng-full [run]
+ 104093 pts/0    R      0:02 stress-ng-full [run]
+ 104128 ?        Ss     0:00 sshd: debian [priv]
+ 104153 pts/0    R      0:04 stress-ng-funccall [run]
+ 105215 pts/0    D      0:00 stress-ng-flock [run]
+ 105216 pts/0    R      0:00 stress-ng-flock [run]
+ 105217 pts/0    D      0:00 stress-ng-flock [run]
+ 105218 pts/0    D      0:00 stress-ng-flock [run]
+ 105219 pts/0    D      0:00 stress-ng-flock [run]
+ 105345 pts/0    D      0:00 stress-ng-flock [run]
+ 105396 pts/0    D      0:00 stress-ng-flock [run]
+ 105397 pts/0    D      0:00 stress-ng-flock [run]
+ 105674 pts/0    D      0:00 stress-ng-flock [run]
+ 105774 pts/0    R      0:02 stress-ng-filename [run]
+ 106824 pts/0    S      0:00 sleep 1m
+ 107369 ?        R      0:00 sshd: debian@pts/1
+ 107725 pts/1    Ss     0:00 -bash
+ 124055 pts/1    R+     0:00 ps ax
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ dmesg
+[  273.515005] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.522580] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.532636] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.543945]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.577123] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.584729] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.594771] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.606116]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.639533] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.647087] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.657120] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.668487]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.701675] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.709283] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.719324] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.730700]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.772991] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.780604] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.790683] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.802050]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.841065] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.848618] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.858657] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.870025]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.903328] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.910907] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.920945] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.932311]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  273.965596] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  273.973149] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  273.983195] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  273.994543]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.027774] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.035357] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.045395] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.056861]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.134780] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.142354] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.152405] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.163774]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.196706] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.204321] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.214438] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.225896]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.258796] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.266383] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.276437] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.287753]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.320550] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.328136] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.338195] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.349532]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.382448] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.390059] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.400129] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.411483]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.453019] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.460633] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.470697] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.482082]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.515574] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.523239] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.533310] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.544662]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.577876] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.585432] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.595515] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.606922]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.639686] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.647262] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.657302] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.668646]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.701620] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.709229] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.719293] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.730638]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.773514] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.781123] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.791183] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.802566]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.836063] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.843671] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.853770] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.865144]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.898736] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.906288] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.916342] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.927672]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  274.961113] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  274.968716] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  274.978788] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  274.990126]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.023659] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.031262] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.041317] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.052655]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.095552] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.103113] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.113199] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.124541]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.158234] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.165850] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.175923] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.187275]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.220970] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.228575] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.238634] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.250010]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.283624] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.291225] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.301297] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.312643]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.346419] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.353968] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  275.364065] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  275.375440]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  275.394416] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.425798] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.459895] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.476254] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.492147] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.508460] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.525672] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.556519] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  275.582989] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  275.614179] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  298.445308] warning: `/bin/ping' has both setuid-root and effective capabilities. Therefore not raising all capabilities.
+[32024.408087] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[32024.443612] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.341720] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.349309] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.359440] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.370773]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.403727] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.411283] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.421333] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.432688]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.471602] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.479175] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.489213] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.500539]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.533080] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.540633] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.550649] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.561973]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.594557] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.602121] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.612159] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.623473]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.664661] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.672259] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.682313] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.693634]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.726443] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.734036] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.744079] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.755530]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.788610] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.796165] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.806200] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.817577]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.850286] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.857835] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.867858] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.879185]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.911923] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.919490] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62208.929529] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62208.940881]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62208.982985] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62208.990547] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.000594] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.011931]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.055935] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.063516] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.073552] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.084930]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.118203] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.125818] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.135873] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.147258]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.180424] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.187972] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.198008] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.209348]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.242626] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.250175] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.260215] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.271538]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.313864] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.321458] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.331528] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.342931]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.377581] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.385128] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.395197] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.406585]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.439691] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.447240] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.457268] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.468624]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.501720] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.509276] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.519302] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.530621]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.563945] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.571500] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.581525] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.592855]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.668295] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.675909] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.686003] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.697348]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.730466] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.738071] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.748143] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.759525]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.792932] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.800596] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.810673] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.822022]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.855209] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.862761] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.872819] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.884173]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.917338] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.924942] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62209.935026] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62209.946382]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62209.988274] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62209.995837] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.005913] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.017272]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.050145] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.057696] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.067761] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.079158]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.111977] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.119561] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.129641] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.141017]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.173711] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.181286] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.191342] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.202679]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.235623] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.243170] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.253216] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.264557]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.306173] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.313767] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.323817] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.335173]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.368412] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.376012] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.386092] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.397457]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.430650] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.438199] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.448235] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.459582]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.492764] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.500315] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.510347] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.521656]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.554746] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.562320] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.572357] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.583731]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.636762] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.644321] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.654360] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.665693]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.699016] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.706611] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.716657] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.728010]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.761237] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.768853] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.778918] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.790266]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.823677] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.831230] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.841264] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.852622]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.886105] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.893657] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62210.903705] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62210.915030]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62210.933634] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62210.964648] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62210.990900] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.006994] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.023227] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.039426] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.056264] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.086938] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62211.111737] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62211.142888] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62218.148036] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62218.180460] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.130174] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.137750] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.147810] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.159211]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.191795] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.199347] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.209387] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.220734]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.253368] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.260925] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.270947] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.282259]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.314791] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.322362] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.332395] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.343688]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.376277] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.383830] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.393855] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.405210]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.446241] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.453832] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.463905] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.475255]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.508008] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.515648] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.525732] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.537075]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.569968] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.577522] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.587569] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.598894]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.631774] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.639323] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.649364] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.660702]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.693617] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.701201] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.711252] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.722569]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.764208] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.771770] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.781812] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.793183]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.826396] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.834019] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.844067] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.855400]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.888883] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.896432] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.906468] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.917804]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62220.950953] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62220.958558] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62220.968599] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62220.980011]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.023549] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.031147] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.041230] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.052587]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.094653] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.102210] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.112276] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.123706]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.160484] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.168040] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.178071] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.189389]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.222481] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.230042] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.240089] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.251421]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.284446] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.291998] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.302031] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.313347]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.346445] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.353993] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.364048] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.375420]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.449855] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.457486] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.467552] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.478928]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.511994] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.519569] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.529618] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.541043]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.573723] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.581284] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.591317] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.602616]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.635508] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.643070] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.653101] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.664465]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.697232] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.704788] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.714830] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.726141]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.767058] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.774657] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.784719] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.796064]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.828930] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.836518] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.846556] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.857897]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.890791] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.898397] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.908465] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.919841]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62221.952970] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62221.960518] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62221.970550] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62221.981883]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.014781] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.022331] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.032383] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.043709]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.085255] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.092816] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.102858] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.114252]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.149124] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.156802] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.166961] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.178340]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.214066] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.221826] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.232194] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.243626]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.277077] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.284817] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.295015] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.306412]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.339983] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.347620] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.357763] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.369152]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.412570] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.420240] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.430385] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.441774]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.475680] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.483331] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.493481] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.504883]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.539607] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.547282] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.557438] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.568808]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.602735] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.610434] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.620558] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.631901]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.665579] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.673322] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[62222.683442] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[62222.694831]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[62222.713632] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.745624] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.770900] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.788497] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.805255] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.822027] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.839281] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.871281] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62222.897517] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62222.929299] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[62926.167142] NET: Registered PF_ALG protocol family
+[62926.518509] capability: warning: `stress-ng' uses deprecated v2 capabilities in a way that may be insecure
+[62926.572062] capability: warning: `stress-ng' uses 32-bit capabilities (legacy support in use)
+[62927.506062] NET: Registered PF_AX25 protocol family
+[62927.952082] NET: Registered PF_ATMPVC protocol family
+[62928.015920] NET: Registered PF_ATMSVC protocol family
+[62930.718295] tun: Universal TUN/TAP device driver, 1.6
+[62936.033657] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62936.261309] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62936.668102]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62937.359906] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62937.510021] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62937.988364]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62938.666872] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62939.052651] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62939.070596] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62939.094386] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62939.278388]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62939.537663] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62939.651796] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62939.679835]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62939.737212] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62940.183655] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62940.289012]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62940.354164] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62940.564714] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62941.357537]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62945.555854] psi_monitor: pressure high: cpu=81% mem=42% io=35% (thresh cpu=80 mem=80 io=80)
+[62945.566228] psi_monitor: logging top 10 tasks under pressure:
+[62945.573128] psi_monitor: pid=507 comm=rs:main Q:Reg psi_flag=3 oncpu=0 cputime(ms)=13653 rss(kB)=3852 io(kB)=23940 score=94131
+[62945.591799] psi_monitor: pid=26945 comm=dockerd psi_flag=3 oncpu=0 cputime(ms)=10402 rss(kB)=43636 io(kB)=0 score=73828
+[62945.610536] psi_monitor: pid=102072 comm=stress-ng psi_flag=3 oncpu=2 cputime(ms)=326 rss(kB)=71460 io(kB)=0 score=37360
+[62945.675302] psi_monitor: pid=101991 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=403 rss(kB)=2156 io(kB)=30984 score=34077
+[62945.690893] psi_monitor: pid=502 comm=wpa_supplicant psi_flag=3 oncpu=0 cputime(ms)=978 rss(kB)=4340 io(kB)=2980 score=10040
+[62945.705323] psi_monitor: pid=102007 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=804 rss(kB)=1900 io(kB)=0 score=4970
+[62945.719614] psi_monitor: pid=102143 comm=stress-ng psi_flag=3 oncpu=0 cputime(ms)=555 rss(kB)=3504 io(kB)=104 score=4631
+[62945.740746] psi_monitor: pid=102144 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=527 rss(kB)=3504 io(kB)=64 score=4451
+[62945.753914] psi_monitor: pid=102066 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=644 rss(kB)=2412 io(kB)=0 score=4426
+[62945.767124] psi_monitor: pid=102068 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=627 rss(kB)=2412 io(kB)=0 score=4341
+[62948.789446] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62948.883871] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62948.989933]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62949.088662] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62949.179384] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62949.374596]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62949.449167] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62949.488477] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62950.006795]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62951.092688] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[62951.184128] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[62951.383849]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[62954.455800] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62954.541889] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62954.849607] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[62955.795890] psi_monitor: pressure high: cpu=93% mem=81% io=78% (thresh cpu=80 mem=80 io=80)
+[62955.806017] psi_monitor: logging top 10 tasks under pressure:
+[62955.887851] psi_monitor: pid=102049 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=401 rss(kB)=169388 io(kB)=0 score=86699
+[62955.999858] psi_monitor: pid=102062 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=355 rss(kB)=165292 io(kB)=0 score=84421
+[62956.060054] psi_monitor: pid=102111 comm=stress-ng psi_flag=14 oncpu=0 cputime(ms)=494 rss(kB)=132252 io(kB)=0 score=68596
+[62956.163851] psi_monitor: pid=102074 comm=stress-ng psi_flag=30 oncpu=1 cputime(ms)=467 rss(kB)=99492 io(kB)=0 score=52081
+[62956.175340] psi_monitor: pid=103142 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=361 rss(kB)=14628 io(kB)=0 score=9119
+[62956.339829] psi_monitor: pid=102144 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=1068 rss(kB)=4164 io(kB)=228 score=7650
+[62956.448993] psi_monitor: pid=102066 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=1225 rss(kB)=2412 io(kB)=0 score=7331
+[62956.479856] psi_monitor: pid=102006 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=1249 rss(kB)=1900 io(kB)=0 score=7195
+[62956.490852] psi_monitor: pid=102148 comm=stress-ng psi_flag=20 oncpu=1 cputime(ms)=1212 rss(kB)=2216 io(kB)=0 score=7168
+[62956.501868] psi_monitor: pid=102068 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=1189 rss(kB)=2412 io(kB)=0 score=7151
+[62966.807916] psi_monitor: pressure high: cpu=95% mem=92% io=90% (thresh cpu=80 mem=80 io=80)
+[62966.817477] psi_monitor: logging top 10 tasks under pressure:
+[62966.823512] psi_monitor: pid=102030 comm=stress-ng psi_flag=3 oncpu=3 cputime(ms)=587 rss(kB)=227748 io(kB)=0 score=116809
+[62966.867443] psi_monitor: pid=102062 comm=stress-ng psi_flag=14 oncpu=3 cputime(ms)=423 rss(kB)=167596 io(kB)=0 score=85913
+[62966.967950] psi_monitor: pid=102123 comm=stress-ng psi_flag=3 oncpu=3 cputime(ms)=571 rss(kB)=132260 io(kB)=0 score=68985
+[62967.184190] psi_monitor: pid=102074 comm=stress-ng psi_flag=3 oncpu=3 cputime(ms)=605 rss(kB)=110756 io(kB)=0 score=58403
+[62967.198823] psi_monitor: pid=102148 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=2267 rss(kB)=2088 io(kB)=0 score=12379
+[62967.214587] psi_monitor: pid=103157 comm=stress-ng psi_flag=14 oncpu=1 cputime(ms)=466 rss(kB)=17896 io(kB)=0 score=11278
+[62967.227458] psi_monitor: pid=102061 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=1933 rss(kB)=2156 io(kB)=0 score=10743
+[62967.277507] psi_monitor: pid=102004 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=1878 rss(kB)=1900 io(kB)=0 score=10340
+[62967.289999] psi_monitor: pid=102144 comm=stress-ng psi_flag=3 oncpu=3 cputime(ms)=1574 rss(kB)=4036 io(kB)=444 score=10332
+[62967.303175] psi_monitor: pid=102068 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=1776 rss(kB)=2412 io(kB)=0 score=10086
+[62977.555970] psi_monitor: pressure high: cpu=96% mem=94% io=92% (thresh cpu=80 mem=80 io=80)
+[62977.565832] psi_monitor: logging top 10 tasks under pressure:
+[62977.574842] psi_monitor: pid=102062 comm=stress-ng psi_flag=14 oncpu=2 cputime(ms)=539 rss(kB)=180140 io(kB)=0 score=92765
+[62977.668317] psi_monitor: pid=102123 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=737 rss(kB)=132260 io(kB)=0 score=69815
+[62977.809998] psi_monitor: pid=103142 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=706 rss(kB)=36784 io(kB)=0 score=21922
+[62977.823557] psi_monitor: pid=103157 comm=stress-ng psi_flag=14 oncpu=3 cputime(ms)=625 rss(kB)=32232 io(kB)=0 score=19241
+[62977.836313] psi_monitor: pid=102148 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=2914 rss(kB)=2088 io(kB)=0 score=15614
+[62977.850081] psi_monitor: pid=102007 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=2601 rss(kB)=1900 io(kB)=0 score=13955
+[62977.864455] psi_monitor: pid=102004 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=2558 rss(kB)=1900 io(kB)=0 score=13740
+[62977.877548] psi_monitor: pid=102071 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=2523 rss(kB)=1908 io(kB)=0 score=13569
+[62977.890136] psi_monitor: pid=102061 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=2486 rss(kB)=2028 io(kB)=0 score=13444
+[62977.904218] psi_monitor: pid=102068 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=2371 rss(kB)=2284 io(kB)=0 score=12997
+[62988.056450] psi_monitor: pressure high: cpu=96% mem=95% io=94% (thresh cpu=80 mem=80 io=80)
+[62988.066583] psi_monitor: logging top 10 tasks under pressure:
+[62988.072826] psi_monitor: pid=103142 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=877 rss(kB)=50224 io(kB)=0 score=29497
+[62988.083893] psi_monitor: pid=103157 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=752 rss(kB)=40552 io(kB)=0 score=24036
+[62988.116105] psi_monitor: pid=103073 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=645 rss(kB)=36872 io(kB)=0 score=21661
+[62988.128076] psi_monitor: pid=102144 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=2747 rss(kB)=3780 io(kB)=464 score=16089
+[62988.140582] psi_monitor: pid=102143 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=2423 rss(kB)=4020 io(kB)=132 score=14257
+[62988.151952] psi_monitor: pid=102145 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=2190 rss(kB)=3948 io(kB)=52 score=12976
+[62988.166207] psi_monitor: pid=102111 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=742 rss(kB)=9704 io(kB)=0 score=8562
+[62988.177078] psi_monitor: pid=102416 comm=stress-ng psi_flag=1 oncpu=3 cputime(ms)=944 rss(kB)=1180 io(kB)=2436 score=7746
+[62988.192086] psi_monitor: pid=103153 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=1265 rss(kB)=1772 io(kB)=0 score=7211
+[62988.203070] psi_monitor: pid=102460 comm=stress-ng psi_flag=1 oncpu=3 cputime(ms)=932 rss(kB)=1308 io(kB)=448 score=5762
+[62988.255534] stress-ng(105218): Attempt to set a LOCK_MAND lock via flock(2). This support has been removed and the request ignored.
+[62998.292204] psi_monitor: pressure high: cpu=93% mem=47% io=60% (thresh cpu=80 mem=80 io=80)
+[62998.301934] psi_monitor: logging top 10 tasks under pressure:
+[62998.312162] psi_monitor: pid=105275 comm=cpu_hog_3 psi_flag=4 oncpu=3 cputime(ms)=752 rss(kB)=275564 io(kB)=0 score=141542
+[62998.323441] psi_monitor: pid=105276 comm=mem_hog_0 psi_flag=4 oncpu=0 cputime(ms)=626 rss(kB)=275564 io(kB)=0 score=140912
+[62998.392116] psi_monitor: pid=105239 comm=cpu_hog_1 psi_flag=4 oncpu=2 cputime(ms)=626 rss(kB)=275564 io(kB)=0 score=140912
+[62998.403797] psi_monitor: pid=105274 comm=cpu_hog_2 psi_flag=4 oncpu=1 cputime(ms)=576 rss(kB)=275564 io(kB)=0 score=140662
+[62998.415651] psi_monitor: pid=105238 comm=cpu_hog_0 psi_flag=4 oncpu=1 cputime(ms)=446 rss(kB)=275564 io(kB)=0 score=140012
+[62998.427105] psi_monitor: pid=105279 comm=mem_hog_3 psi_flag=4 oncpu=3 cputime(ms)=348 rss(kB)=275564 io(kB)=0 score=139522
+[62998.438507] psi_monitor: pid=105278 comm=mem_hog_2 psi_flag=4 oncpu=1 cputime(ms)=309 rss(kB)=275564 io(kB)=0 score=139327
+[62998.450387] psi_monitor: pid=103230 comm=ffmpeg psi_flag=4 oncpu=1 cputime(ms)=779 rss(kB)=12892 io(kB)=17516 score=27857
+[62998.461992] psi_monitor: pid=103226 comm=ffmpeg psi_flag=1 oncpu=0 cputime(ms)=618 rss(kB)=13348 io(kB)=14000 score=23764
+[62998.473828] psi_monitor: pid=102145 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=2571 rss(kB)=3948 io(kB)=52 score=14881
+[63008.532195] psi_monitor: pressure high: cpu=92% mem=17% io=40% (thresh cpu=80 mem=80 io=80)
+[63008.541131] psi_monitor: logging top 10 tasks under pressure:
+[63008.547501] psi_monitor: pid=105239 comm=cpu_hog_1 psi_flag=4 oncpu=3 cputime(ms)=2765 rss(kB)=278332 io(kB)=0 score=152991
+[63008.559898] psi_monitor: pid=105275 comm=cpu_hog_3 psi_flag=4 oncpu=3 cputime(ms)=2279 rss(kB)=278332 io(kB)=0 score=150561
+[63008.571888] psi_monitor: pid=105238 comm=cpu_hog_0 psi_flag=4 oncpu=1 cputime(ms)=2058 rss(kB)=278332 io(kB)=0 score=149456
+[63008.583695] psi_monitor: pid=105274 comm=cpu_hog_2 psi_flag=4 oncpu=3 cputime(ms)=1844 rss(kB)=278332 io(kB)=0 score=148386
+[63008.595445] psi_monitor: pid=105277 comm=mem_hog_1 psi_flag=4 oncpu=1 cputime(ms)=1312 rss(kB)=278332 io(kB)=0 score=145726
+[63008.612196] psi_monitor: pid=105280 comm=io_hog_0 psi_flag=0 oncpu=3 cputime(ms)=219 rss(kB)=278332 io(kB)=2560 score=142821
+[63008.624161] psi_monitor: pid=105281 comm=io_hog_1 psi_flag=0 oncpu=3 cputime(ms)=211 rss(kB)=278332 io(kB)=2552 score=142773
+[63008.635493] psi_monitor: pid=103230 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=1735 rss(kB)=61792 io(kB)=36296 score=75867
+[63008.647102] psi_monitor: pid=103226 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=1536 rss(kB)=62012 io(kB)=25732 score=64418
+[63008.658825] psi_monitor: pid=104056 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=3107 rss(kB)=1896 io(kB)=0 score=16483
+[63018.772235] psi_monitor: pressure high: cpu=89% mem=6% io=25% (thresh cpu=80 mem=80 io=80)
+[63018.781423] psi_monitor: logging top 10 tasks under pressure:
+[63018.787920] psi_monitor: pid=105238 comm=cpu_hog_0 psi_flag=4 oncpu=1 cputime(ms)=4390 rss(kB)=314352 io(kB)=0 score=179126
+[63018.799538] psi_monitor: pid=105239 comm=cpu_hog_1 psi_flag=4 oncpu=3 cputime(ms)=4116 rss(kB)=314352 io(kB)=0 score=177756
+[63018.812797] psi_monitor: pid=105275 comm=cpu_hog_3 psi_flag=4 oncpu=1 cputime(ms)=3103 rss(kB)=314352 io(kB)=0 score=172691
+[63018.828311] psi_monitor: pid=105274 comm=cpu_hog_2 psi_flag=4 oncpu=1 cputime(ms)=2640 rss(kB)=314352 io(kB)=0 score=170376
+[63018.840714] psi_monitor: pid=105278 comm=mem_hog_2 psi_flag=4 oncpu=1 cputime(ms)=2227 rss(kB)=314352 io(kB)=0 score=168311
+[63018.856281] psi_monitor: pid=105277 comm=mem_hog_1 psi_flag=4 oncpu=3 cputime(ms)=2030 rss(kB)=314352 io(kB)=0 score=167326
+[63018.867832] psi_monitor: pid=105279 comm=mem_hog_3 psi_flag=4 oncpu=1 cputime(ms)=1921 rss(kB)=314352 io(kB)=0 score=166781
+[63018.880269] psi_monitor: pid=105281 comm=io_hog_1 psi_flag=4 oncpu=1 cputime(ms)=506 rss(kB)=314352 io(kB)=5548 score=165254
+[63018.896476] psi_monitor: pid=119727 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=951 rss(kB)=192348 io(kB)=0 score=100929
+[63018.907653] psi_monitor: pid=119728 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=847 rss(kB)=192348 io(kB)=128 score=100537
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ ps ax | grep simulate
+ 138467 pts/1    S+     0:00 grep simulate
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ ps ax
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     3:36 /sbin/init
+      2 ?        S      0:00 [kthreadd]
+      3 ?        S      0:00 [pool_workqueue_release]
+      4 ?        I<     0:00 [kworker/R-rcu_gp]
+      5 ?        I<     0:00 [kworker/R-sync_wq]
+      6 ?        I<     0:00 [kworker/R-kvfree_rcu_reclaim]
+      7 ?        I<     0:00 [kworker/R-slub_flushwq]
+      8 ?        I<     0:00 [kworker/R-netns]
+     13 ?        I<     0:00 [kworker/R-mm_percpu_wq]
+     14 ?        S      0:01 [ksoftirqd/0]
+     15 ?        I      0:15 [rcu_sched]
+     16 ?        S      0:00 [rcu_exp_par_gp_kthread_worker/0]
+     17 ?        S      0:00 [rcu_exp_gp_kthread_worker]
+     18 ?        S      0:10 [migration/0]
+     19 ?        S      0:00 [cpuhp/0]
+     20 ?        S      0:00 [cpuhp/1]
+     21 ?        S      0:10 [migration/1]
+     22 ?        S      0:00 [ksoftirqd/1]
+     25 ?        S      0:00 [cpuhp/2]
+     26 ?        S      0:10 [migration/2]
+     27 ?        S      0:00 [ksoftirqd/2]
+     30 ?        S      0:00 [cpuhp/3]
+     31 ?        S      0:10 [migration/3]
+     32 ?        S      0:01 [ksoftirqd/3]
+     34 ?        I<     0:00 [kworker/3:0H-kblockd]
+     35 ?        S      0:00 [kdevtmpfs]
+     36 ?        I<     0:00 [kworker/R-inet_frag_wq]
+     37 ?        I      0:00 [rcu_tasks_kthread]
+     38 ?        S      0:00 [kauditd]
+     40 ?        S      0:00 [khungtaskd]
+     41 ?        S      0:00 [oom_reaper]
+     42 ?        I<     0:00 [kworker/R-writeback]
+     43 ?        S      0:07 [kcompactd0]
+     44 ?        SN     0:00 [ksmd]
+     45 ?        I<     0:00 [kworker/R-kblockd]
+     46 ?        I<     0:00 [kworker/R-blkcg_punt_bio]
+     47 ?        I<     0:00 [kworker/R-kintegrityd]
+     50 ?        I<     0:00 [kworker/R-tpm_dev_wq]
+     52 ?        I<     0:00 [kworker/R-edac-poller]
+     53 ?        I<     0:00 [kworker/R-devfreq_wq]
+     54 ?        S      0:00 [watchdogd]
+     56 ?        I<     0:00 [kworker/R-quota_events_unbound]
+     57 ?        I<     0:00 [kworker/R-rpciod]
+     58 ?        I<     0:00 [kworker/R-xprtiod]
+     60 ?        S      0:02 [kswapd0]
+     61 ?        I<     0:00 [kworker/R-nfsiod]
+     62 ?        I<     0:00 [kworker/R-cryptd]
+     63 ?        I<     0:00 [kworker/R-kthrotld]
+     64 ?        I<     0:00 [kworker/R-kpcitest]
+     65 ?        I<     0:00 [kworker/R-kpcintb]
+     67 ?        I<     0:00 [kworker/R-nvme-wq]
+     68 ?        I<     0:00 [kworker/R-nvme-reset-wq]
+     69 ?        I<     0:00 [kworker/R-nvme-delete-wq]
+     70 ?        I<     0:00 [kworker/R-vfio-irqfd-cleanup]
+     71 ?        I<     0:00 [kworker/R-uas]
+     72 ?        I<     0:00 [kworker/R-mld]
+     73 ?        I<     0:00 [kworker/R-ipv6_addrconf]
+     74 ?        I<     0:00 [kworker/R-kstrp]
+     75 ?        I<     0:00 [kworker/u17:0]
+     77 ?        I<     0:00 [kworker/R-sdhci]
+     79 ?        S      0:00 [irq/16-mmc0]
+     80 ?        S      0:00 [irq/25-4900000.i2c]
+     82 ?        S      0:00 [irq/26-20000000.i2c]
+     83 ?        S      0:00 [irq/27-tps65219_irq]
+     87 ?        S      0:00 [irq/77-20010000.i2c]
+     88 ?        S      0:00 [irq/78-20020000.i2c]
+     89 ?        S      0:00 [irq/79-20030000.i2c]
+     95 ?        S      0:00 [spi0]
+     97 ?        I<     0:00 [kworker/R-mmc_complete]
+     98 ?        S      0:00 [ptp0]
+     99 ?        S      0:00 [irq/294-8000000.ethernet]
+    101 ?        S      0:00 [irq/296-2b1f0000.rtc]
+    105 ?        S      0:20 [sugov:0]
+    106 ?        S      0:00 [irq/365-2-004c]
+    107 ?        S      0:00 [card0-crtc0]
+    112 ?        I<     0:00 [kworker/R-sdhci]
+    113 ?        S      0:00 [irq/478-mmc2]
+    115 ?        I<     0:00 [kworker/R-sdhci]
+    116 ?        S      0:00 [irq/479-mmc1]
+    118 ?        S      0:00 [irq/473-fa00000.mmc cd]
+    243 ?        D      0:12 [jbd2/mmcblk0p2-8]
+    244 ?        I<     0:00 [kworker/R-ext4-rsv-conversion]
+    282 ?        I<     0:01 [kworker/1:1H-kblockd]
+    294 ?        Ss     1:35 /lib/systemd/systemd-journald
+    315 ?        Ss     0:01 /lib/systemd/systemd-udevd
+    328 ?        Ss     0:06 /lib/systemd/systemd-networkd
+    383 ?        S      0:00 [irq/480-2b10000.audio-controller_rx]
+    384 ?        S      0:00 [irq/481-2b10000.audio-controller_tx]
+    419 ?        Ss     0:08 /lib/systemd/systemd-resolved
+    424 ?        Ssl    0:01 /lib/systemd/systemd-timesyncd
+    476 ?        I<     0:00 [kworker/R-cfg80211]
+    479 ?        Ss     0:08 avahi-daemon: running [BeaglePlay.local]
+    482 ?        Ss     0:00 /usr/sbin/cron -f
+    483 ?        Ss     1:35 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    493 ?        Ssl    0:25 /usr/sbin/rsyslogd -n -iNONE
+    496 ?        Ss     0:21 /lib/systemd/systemd-logind
+    501 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+    502 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+    515 ?        S      0:00 avahi-daemon: chroot helper
+    584 ?        I<     0:00 [kworker/R-wl12xx_wq]
+    585 ?        Ssl    2:25 /usr/bin/containerd
+    600 ?        Ssl    0:01 /usr/libexec/polkitd --no-debug
+    612 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+    627 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    628 ?        S      0:00 [irq/370-wl18xx]
+    629 ttyGS0   Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyGS0 vt220
+    630 ttyS2    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS2 vt220
+    634 ?        Ss     0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+    635 ?        S      0:00 nginx: worker process
+    636 ?        S      0:00 nginx: worker process
+    637 ?        S      0:00 nginx: worker process
+    639 ?        S      0:00 nginx: worker process
+    650 ?        Ss     0:01 /sbin/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf -Dnl80211,wext -iwlan0
+    664 ?        Ssl    1:32 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+    682 ?        Ss     0:01 /usr/sbin/hostapd -B -P /run/hostapd.pid /etc/hostapd/hostapd.conf
+    861 ?        S      0:00 [file-storage]
+    862 ?        S      0:00 [irq/490-dwc3]
+   1296 ?        SNsl   0:02 /usr/libexec/rtkit-daemon
+   5380 ?        I<     0:01 [kworker/2:2H-kblockd]
+  65286 ?        I<     0:00 [kworker/1:2H-kblockd]
+  82216 ?        I<     0:00 [kworker/3:1H-kblockd]
+  82801 ?        I<     0:00 [kworker/2:0H-kblockd]
+  85237 ?        I<     0:01 [kworker/0:0H-kblockd]
+  91073 ?        I      0:03 [kworker/u16:1-events_freezable_pwr_efficient]
+  95123 ?        I      0:01 [kworker/u16:3-events_freezable_pwr_efficient]
+ 100206 ?        I      0:00 [kworker/u16:0-events_freezable_pwr_efficient]
+ 100254 ?        I      0:00 [kworker/1:0-events]
+ 100427 ?        I      0:01 [kworker/2:2-mm_percpu_wq]
+ 100622 ?        I      0:00 [kworker/0:2-dio/mmcblk0p2]
+ 100737 ?        Ss     0:00 sshd: debian [priv]
+ 100741 ?        Ss     0:00 /lib/systemd/systemd --user
+ 100742 ?        I      0:00 [kworker/3:3-cgroup_release]
+ 100743 ?        S      0:00 (sd-pam)
+ 100757 ?        Ssl    0:00 /usr/bin/pipewire
+ 100758 ?        Ssl    0:02 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+ 100762 ?        Ss     0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 100763 ?        S      0:00 sshd: debian@pts/0
+ 100764 ?        Sl     0:00 /usr/bin/pipewire-media-session
+ 100766 pts/0    Ss+    0:00 -bash
+ 101028 ?        I      0:00 [kworker/2:0-events]
+ 101278 ?        I      0:00 [kworker/0:0-dio/mmcblk0p2]
+ 101295 ?        I      0:00 [kworker/3:0-events]
+ 101384 ?        I<     0:00 [kworker/0:2H-kblockd]
+ 101480 ?        I      0:00 [kworker/u16:2-ext4-rsv-conversion]
+ 101645 ?        I      0:00 [kworker/1:2-mm_percpu_wq]
+ 101820 ?        I      0:00 [kworker/3:1-events]
+ 101891 ?        I      0:00 [kworker/2:1-events]
+ 101924 ?        I      0:00 [kworker/0:1-dio/mmcblk0p2]
+ 102023 ?        I      0:00 [kworker/u16:4-flush-179:0]
+ 102029 ?        I<     0:00 [kworker/R-dio/mmcblk0p2]
+ 102134 ?        I<     0:00 [kworker/0:1H-kblockd]
+ 102170 ?        I      0:00 [kworker/0:3-dio/mmcblk0p2]
+ 102183 ?        I      0:00 [kworker/u16:5-events_power_efficient]
+ 102233 ?        I      0:00 [kworker/u16:6-events_freezable_pwr_efficient]
+ 102236 ?        I      0:00 [kworker/u16:7-ext4-rsv-conversion]
+ 102255 ?        I      0:00 [kworker/0:4-dio/mmcblk0p2]
+ 102256 ?        I      0:00 [kworker/0:5-dio/mmcblk0p2]
+ 102257 ?        I      0:00 [kworker/0:6-dio/mmcblk0p2]
+ 102258 ?        I      0:00 [kworker/0:7-dio/mmcblk0p2]
+ 102259 ?        I      0:00 [kworker/0:8-dio/mmcblk0p2]
+ 102260 ?        I      0:00 [kworker/0:9-dio/mmcblk0p2]
+ 102267 ?        I      0:00 [kworker/0:10-dio/mmcblk0p2]
+ 102292 ?        I      0:00 [kworker/0:11-dio/mmcblk0p2]
+ 102293 ?        I      0:00 [kworker/0:12-dio/mmcblk0p2]
+ 102294 ?        I      0:00 [kworker/0:13-events]
+ 102310 ?        R      0:00 [kworker/u16:8-ext4-rsv-conversion]
+ 102519 ?        I      0:00 [kworker/0:14-events]
+ 102520 ?        I      0:00 [kworker/0:15-dio/mmcblk0p2]
+ 102521 ?        I      0:00 [kworker/0:16-dio/mmcblk0p2]
+ 102522 ?        I      0:00 [kworker/0:17-dio/mmcblk0p2]
+ 102523 ?        I      0:00 [kworker/0:18-dio/mmcblk0p2]
+ 102524 ?        I      0:00 [kworker/0:19-dio/mmcblk0p2]
+ 102525 ?        I      0:00 [kworker/0:20-dio/mmcblk0p2]
+ 102526 ?        I      0:00 [kworker/0:21-dio/mmcblk0p2]
+ 102527 ?        I      0:00 [kworker/0:22-dio/mmcblk0p2]
+ 102528 ?        I      0:00 [kworker/0:23-dio/mmcblk0p2]
+ 102529 ?        I      0:00 [kworker/0:24-dio/mmcblk0p2]
+ 102530 ?        I      0:00 [kworker/0:25-dio/mmcblk0p2]
+ 102531 ?        I      0:00 [kworker/0:26-dio/mmcblk0p2]
+ 102532 ?        I      0:00 [kworker/0:27-dio/mmcblk0p2]
+ 102533 ?        I      0:00 [kworker/0:28-dio/mmcblk0p2]
+ 102534 ?        I      0:00 [kworker/0:29-dio/mmcblk0p2]
+ 102535 ?        I      0:00 [kworker/0:30-dio/mmcblk0p2]
+ 102536 ?        I      0:00 [kworker/0:31-dio/mmcblk0p2]
+ 102537 ?        I      0:00 [kworker/0:32-dio/mmcblk0p2]
+ 102538 ?        I      0:00 [kworker/0:33-dio/mmcblk0p2]
+ 102539 ?        I      0:00 [kworker/0:34-dio/mmcblk0p2]
+ 102540 ?        I      0:00 [kworker/0:35-dio/mmcblk0p2]
+ 102541 ?        I      0:00 [kworker/0:36-dio/mmcblk0p2]
+ 102542 ?        I      0:00 [kworker/0:37-dio/mmcblk0p2]
+ 102543 ?        I      0:00 [kworker/0:38-dio/mmcblk0p2]
+ 102544 ?        I      0:00 [kworker/0:39-dio/mmcblk0p2]
+ 102545 ?        I      0:00 [kworker/0:40-dio/mmcblk0p2]
+ 102546 ?        I      0:00 [kworker/0:41-dio/mmcblk0p2]
+ 102547 ?        I      0:00 [kworker/0:42-dio/mmcblk0p2]
+ 102548 ?        I      0:00 [kworker/0:43-dio/mmcblk0p2]
+ 102549 ?        I      0:00 [kworker/0:44-dio/mmcblk0p2]
+ 102550 ?        I      0:00 [kworker/0:45-dio/mmcblk0p2]
+ 102551 ?        I      0:00 [kworker/0:46-dio/mmcblk0p2]
+ 102552 ?        I      0:00 [kworker/0:47-dio/mmcblk0p2]
+ 102553 ?        I      0:00 [kworker/0:48-dio/mmcblk0p2]
+ 102554 ?        I      0:00 [kworker/0:49-dio/mmcblk0p2]
+ 102555 ?        I      0:00 [kworker/0:50-dio/mmcblk0p2]
+ 102556 ?        I      0:00 [kworker/0:51-events]
+ 102557 ?        I      0:00 [kworker/0:52-dio/mmcblk0p2]
+ 102558 ?        I      0:00 [kworker/0:53-dio/mmcblk0p2]
+ 102559 ?        I      0:00 [kworker/0:54-dio/mmcblk0p2]
+ 102560 ?        I      0:00 [kworker/0:55-dio/mmcblk0p2]
+ 102561 ?        I      0:00 [kworker/0:56-dio/mmcblk0p2]
+ 102562 ?        I      0:00 [kworker/0:57-dio/mmcblk0p2]
+ 102563 ?        I      0:00 [kworker/0:58-dio/mmcblk0p2]
+ 102564 ?        I      0:00 [kworker/0:59-dio/mmcblk0p2]
+ 102565 ?        I      0:00 [kworker/0:60-dio/mmcblk0p2]
+ 102566 ?        I      0:00 [kworker/0:61-dio/mmcblk0p2]
+ 102567 ?        I      0:00 [kworker/0:62-dio/mmcblk0p2]
+ 102568 ?        I      0:00 [kworker/0:63-dio/mmcblk0p2]
+ 102569 ?        I      0:00 [kworker/0:64-dio/mmcblk0p2]
+ 102662 ?        I      0:00 [kworker/0:65-dio/mmcblk0p2]
+ 102663 ?        I      0:00 [kworker/0:66-dio/mmcblk0p2]
+ 102665 ?        I      0:00 [kworker/0:67-dio/mmcblk0p2]
+ 102666 ?        I      0:00 [kworker/0:68-dio/mmcblk0p2]
+ 102667 ?        I      0:00 [kworker/0:69-dio/mmcblk0p2]
+ 102668 ?        I      0:00 [kworker/0:70-dio/mmcblk0p2]
+ 102669 ?        I      0:00 [kworker/0:71-dio/mmcblk0p2]
+ 102670 ?        I      0:00 [kworker/0:72-dio/mmcblk0p2]
+ 102671 ?        I      0:00 [kworker/0:73-dio/mmcblk0p2]
+ 102672 ?        I      0:00 [kworker/0:74-dio/mmcblk0p2]
+ 102673 ?        I      0:00 [kworker/0:75-dio/mmcblk0p2]
+ 102675 ?        I      0:00 [kworker/0:76-dio/mmcblk0p2]
+ 102678 ?        I      0:00 [kworker/0:77-dio/mmcblk0p2]
+ 102679 ?        I      0:00 [kworker/0:78-dio/mmcblk0p2]
+ 102681 ?        I      0:00 [kworker/0:79-dio/mmcblk0p2]
+ 102682 ?        I      0:00 [kworker/0:80-dio/mmcblk0p2]
+ 102683 ?        I      0:00 [kworker/0:81-dio/mmcblk0p2]
+ 102684 ?        I      0:00 [kworker/0:82-dio/mmcblk0p2]
+ 102685 ?        I      0:00 [kworker/0:83-dio/mmcblk0p2]
+ 102686 ?        I      0:00 [kworker/0:84-dio/mmcblk0p2]
+ 102688 ?        I      0:00 [kworker/0:85-events]
+ 102689 ?        I      0:00 [kworker/0:86-dio/mmcblk0p2]
+ 102690 ?        I      0:00 [kworker/0:87-dio/mmcblk0p2]
+ 102691 ?        I      0:00 [kworker/0:88-dio/mmcblk0p2]
+ 102698 ?        I      0:00 [kworker/0:89-dio/mmcblk0p2]
+ 102702 ?        I      0:00 [kworker/0:90-dio/mmcblk0p2]
+ 102703 ?        I      0:00 [kworker/0:91-dio/mmcblk0p2]
+ 102705 ?        I      0:00 [kworker/0:92-dio/mmcblk0p2]
+ 102707 ?        I      0:00 [kworker/0:93-dio/mmcblk0p2]
+ 102711 ?        I      0:00 [kworker/0:94-dio/mmcblk0p2]
+ 102713 ?        I      0:00 [kworker/0:95-dio/mmcblk0p2]
+ 102715 ?        I      0:00 [kworker/0:96-dio/mmcblk0p2]
+ 102717 ?        I      0:00 [kworker/0:97-dio/mmcblk0p2]
+ 102721 ?        I      0:00 [kworker/0:98-dio/mmcblk0p2]
+ 103226 pts/0    SLl    0:26 ffmpeg -i video1.mp4 -f null /home/debian
+ 103230 pts/0    SLl    0:23 ffmpeg -i video1.mp4 -f null /home/debian
+ 103260 ?        I      0:00 [kworker/u16:9-ext4-rsv-conversion]
+ 103267 ?        I      0:00 [kworker/u16:10-pm]
+ 103332 ?        I      0:00 [kworker/u16:11-events_freezable_pwr_efficient]
+ 103435 ?        I<     0:00 [kworker/3:2H-kblockd]
+ 103455 ?        I      0:00 [kworker/0:99-rcu_gp]
+ 103606 ?        I<     0:00 [kworker/2:1H-kblockd]
+ 103677 pts/0    Sl     1:07 ./psi_user_test
+ 103697 ?        I<     0:00 [kworker/1:0H-kblockd]
+ 104128 ?        Ss     0:00 sshd: debian [priv]
+ 106824 pts/0    S      0:00 sleep 1m
+ 107369 ?        R      0:00 sshd: debian@pts/1
+ 107725 pts/1    Ss     0:00 -bash
+ 138452 ?        Ssl    0:04 /opt/bb-code-server/app/lib/node /opt/bb-code-server/app --cert --auth none --disable-telemetry --disable-update-check --config /
+ 138472 ?        Rl     0:03 /opt/bb-code-server/app/lib/node /opt/bb-code-server/app/out/node/entry
+ 138479 pts/1    R+     0:00 ps ax
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ ps ax | grep stress-ng
+ 138502 pts/1    S+     0:00 grep stress-ng
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$ free -m
+               total        used        free      shared  buff/cache   available
+Mem:            1939         992         666           0         280         910
+Swap:           2047          74        1973
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$
+debian@BeaglePlay:~$

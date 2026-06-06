@@ -1,0 +1,632 @@
+debian@BeaglePlay:~$ dmesg
+[   11.005089] hub 1-0:1.0: 1 port detected
+[   11.034319] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.107042] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   11.146164] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   11.238172] cfg80211: loaded regulatory.db is malformed or signature is missing/invalid
+[   11.601858] Adding 2097148k swap on /var/swap.  Priority:-1 extents:7 across:4653052k SS
+[   11.606160] Mass Storage Function, version: 2009/09/11
+[   11.646291] LUN: removable file: (no medium)
+[   12.513946] am65-cpsw-nuss 8000000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[   12.585267] wlcore: wl18xx HW: 183x or 180x, PG 2.2 (ROM 0x11)
+[   12.601162] wlcore: WARNING Detected unconfigured mac address in nvs, derive from fuse instead.
+[   12.610181] wlcore: WARNING This default nvs file can be removed from the file system
+[   12.621996] wlcore: loaded
+[   13.274260] wlcore: using inverted interrupt logic: 2
+[   13.335937] wlcore: PHY firmware version: Rev 8.2.0.0.243
+[   13.427405] wlcore: firmware booted (Rev 8.9.0.0.83)
+[   13.638478] wlcore: down
+[   13.837385] audit: type=1400 audit(1778517972.389:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=692 comm="apparmor_parser"
+[   14.017980] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   14.036865] Bridge firewalling registered
+[   14.532959] Initializing XFRM netlink socket
+[   16.708773] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6a
+[   16.720771] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:6b
+[   16.733048] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   16.740418] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:6d
+[   26.849268] ti_sci_pm_domains 44043000.system-controller:power-controller: sync_state() pending due to fd00000.gpu
+[  111.764147] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  111.771737] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  111.781802] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  111.793125]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  111.825894] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  111.833471] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  111.843527] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  111.854931]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  111.892254] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  111.899806] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  111.909864] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  111.921238]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  111.953881] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  111.961433] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  111.971475] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  111.982825]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.016106] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.023674] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.033696] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.045031]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.086116] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.093693] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.103730] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.115069]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.147772] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.155325] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.165347] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.176667]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.209352] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.216923] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.226993] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.238322]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.271167] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.278724] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.288773] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.300138]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.332878] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.340429] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.350469] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.361794]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.409372] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.416931] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.426963] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.438289]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.471370] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.478945] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.488991] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.500332]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.533583] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.541192] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.551258] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.562598]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.595717] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.603270] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.613304] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.624670]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.657901] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.665516] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.675591] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.686953]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.729259] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.736877] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.746955] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.758291]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.791964] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.799567] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.809651] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.821088]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.854810] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.862360] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.872431] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.883840]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.916923] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.924489] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.934536] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  112.945908]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  112.978877] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  112.986441] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  112.996489] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.007867]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.082616] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.090256] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.100360] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.111785]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.144694] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.152256] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.162331] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.173715]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.206235] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.213806] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.223854] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.235248]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.267891] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.275458] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.285494] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.296792]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.329553] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.337111] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.347139] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.358479]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.399559] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.407152] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.417223] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.428569]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.461349] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.468925] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.479016] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.490386]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.523281] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.530887] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.540973] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.552359]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.585206] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.592793] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.602885] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.614222]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.647401] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.655010] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.665071] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.676455]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.719212] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.726782] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.736859] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.748214]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.781761] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.789364] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.799440] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.810811]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.844316] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.851971] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.862103] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.873521]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.906971] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.914579] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.924650] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.936054]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  113.969697] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  113.977251] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  113.987398] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  113.998758]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.041975] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.049592] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  114.059709] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  114.071129]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.104668] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.112282] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  114.122357] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  114.133756]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.167441] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.174996] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  114.185039] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  114.196420]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.229770] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.237387] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  114.247514] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  114.258919]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.292179] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.299738] davinci-mcasp 2b10000.audio-controller: stream has more channels (2) than are enabled in mcasp (0)
+[  114.309774] davinci-mcasp 2b10000.audio-controller: ASoC error (-22): at snd_soc_dai_hw_params() on 2b10000.audio-controller
+[  114.321087]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_hw_params() on davinci-mcasp.0-i2s-hifi
+[  114.339762] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.370850] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.403611] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.419624] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.436006] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.452850] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.469337] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.500492] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  114.527128] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[  114.558329] davinci-mcasp 2b10000.audio-controller: Sample-rate is off by 400 PPM
+[  989.273944] tun: Universal TUN/TAP device driver, 1.6
+[  989.340460] NET: Registered PF_ALG protocol family
+[  989.410057] AppArmor DFA diff encoded transition state without header flag
+[  989.411582] audit: type=1400 audit(1778518968.266:12): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2604 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  989.427289] AppArmor DFA diff encoded transition state without header flag
+[  989.450214] AppArmor DFA diff encoded transition state without header flag
+[  989.450645] audit: type=1400 audit(1778518968.270:13): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2605 comm="stress-ng"
+[  989.453049] AppArmor DFA diff encoded transition state without header flag
+[  989.471372] AppArmor DFA diff encoded transition state without header flag
+[  989.494620] audit: type=1400 audit(1778518968.298:14): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2604 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  989.556281] AppArmor DFA diff encoded transition state without header flag
+[  989.618849] AppArmor DFA diff encoded transition state without header flag
+[  989.656672] capability: warning: `stress-ng' uses deprecated v2 capabilities in a way that may be insecure
+[  989.665158] AppArmor DFA diff encoded transition state without header flag
+[  989.673996] audit: type=1400 audit(1778518968.310:15): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  989.712046] capability: warning: `stress-ng' uses 32-bit capabilities (legacy support in use)
+[  989.796500] AppArmor DFA diff encoded transition state without header flag
+[  989.841108] AppArmor DFA diff encoded transition state without header flag
+[  989.873326] AppArmor DFA diff encoded transition state without header flag
+[  989.882583] audit: type=1400 audit(1778518968.314:16): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2618 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  989.918641] audit: type=1400 audit(1778518968.330:17): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2619 comm="stress-ng"
+[  989.947190] audit: type=1400 audit(1778518968.362:18): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2618 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  990.005750] AppArmor DFA diff encoded transition state without header flag
+[  990.034342] AppArmor DFA diff encoded transition state without header flag
+[  990.055033] audit: type=1400 audit(1778518968.414:19): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  990.106623] audit: type=1400 audit(1778518968.462:20): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2605 comm="stress-ng"
+[  990.122175] NET: Registered PF_ATMPVC protocol family
+[  990.134571] audit: type=1400 audit(1778518968.482:21): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2619 comm="stress-ng"
+[  990.138591] NET: Registered PF_ATMSVC protocol family
+[  990.169190] AppArmor DFA diff encoded transition state without header flag
+[  990.277966] AppArmor DFA diff encoded transition state without header flag
+[  990.317914] AppArmor DFA diff encoded transition state without header flag
+[  990.455779] AppArmor DFA diff encoded transition state without header flag
+[  990.482999] NET: Registered PF_AX25 protocol family
+[  990.537926] AppArmor DFA diff encoded transition state without header flag
+[  990.670654] AppArmor DFA diff encoded transition state without header flag
+[  990.770038] AppArmor DFA diff encoded transition state without header flag
+[  991.198074] AppArmor DFA diff encoded transition state without header flag
+[  991.418519] AppArmor DFA diff encoded transition state without header flag
+[  991.543478] AppArmor DFA diff encoded transition state without header flag
+[  991.549678] AppArmor DFA diff encoded transition state without header flag
+[  992.084372] AppArmor DFA diff encoded transition state without header flag
+[  992.348701] AppArmor DFA diff encoded transition state without header flag
+[  992.941348] AppArmor DFA diff encoded transition state without header flag
+[  992.997194] AppArmor DFA diff encoded transition state without header flag
+[  993.079879] AppArmor DFA diff encoded transition state without header flag
+[  993.112484] AppArmor DFA diff encoded transition state without header flag
+[  993.162267] AppArmor DFA diff encoded transition state without header flag
+[  993.405295] AppArmor DFA diff encoded transition state without header flag
+[  993.770734] sched: DL replenish lagged too much
+[  993.801204] AppArmor DFA diff encoded transition state without header flag
+[  994.168802] PPP generic driver version 2.4.2
+[  994.191010] AppArmor DFA diff encoded transition state without header flag
+[  994.497738] kauditd_printk_skb: 33 callbacks suppressed
+[  994.497808] audit: type=1400 audit(1778518973.352:55): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2605 comm="stress-ng"
+[  994.630174] AppArmor DFA diff encoded transition state without header flag
+[  994.630699] audit: type=1400 audit(1778518973.491:56): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.702954] audit: type=1400 audit(1778518973.559:57): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2605 comm="stress-ng"
+[  994.757251] AppArmor DFA diff encoded transition state without header flag
+[  994.757585] audit: type=1400 audit(1778518973.614:58): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.812029] AppArmor DFA diff encoded transition state without header flag
+[  994.812243] audit: type=1400 audit(1778518973.672:59): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.815446] AppArmor DFA diff encoded transition state without header flag
+[  994.840946] audit: type=1400 audit(1778518973.700:60): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.843899] AppArmor DFA diff encoded transition state without header flag
+[  994.876570] audit: type=1400 audit(1778518973.735:61): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.879743] AppArmor DFA diff encoded transition state without header flag
+[  994.906216] audit: type=1400 audit(1778518973.763:62): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  994.909315] AppArmor DFA diff encoded transition state without header flag
+[  994.967423] AppArmor DFA diff encoded transition state without header flag
+[  995.126580] audit: type=1400 audit(1778518973.984:63): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  995.149817] AppArmor DFA diff encoded transition state without header flag
+[  995.278843] audit: type=1400 audit(1778518974.016:64): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  995.306274] AppArmor DFA diff encoded transition state without header flag
+[  995.374600] AppArmor DFA diff encoded transition state without header flag
+[  995.439944] AppArmor DFA diff encoded transition state without header flag
+[  995.492115] AppArmor DFA diff encoded transition state without header flag
+[  995.655465] AppArmor DFA diff encoded transition state without header flag
+[  995.790338] AppArmor DFA diff encoded transition state without header flag
+[  995.828304] AppArmor DFA diff encoded transition state without header flag
+[  995.848116] AppArmor DFA diff encoded transition state without header flag
+[  995.979297] AppArmor DFA diff encoded transition state without header flag
+[  996.027383] AppArmor DFA diff encoded transition state without header flag
+[  996.047985] AppArmor DFA diff encoded transition state without header flag
+[  996.098337] AppArmor DFA diff encoded transition state without header flag
+[  996.157778] AppArmor DFA diff encoded transition state without header flag
+[  996.200924] AppArmor DFA diff encoded transition state without header flag
+[  996.216382] AppArmor DFA diff encoded transition state without header flag
+[  996.336407] AppArmor DFA diff encoded transition state without header flag
+[  996.343266] AppArmor DFA diff encoded transition state without header flag
+[  997.369247] AppArmor DFA diff encoded transition state without header flag
+[  998.052840] AppArmor DFA diff encoded transition state without header flag
+[  998.494248] AppArmor DFA diff encoded transition state without header flag
+[  998.517598] stress-ng(3439): Attempt to set a LOCK_MAND lock via flock(2). This support has been removed and the request ignored.
+[  998.772561] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[  998.851300] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[  998.980222] AppArmor DFA diff encoded transition state without header flag
+[  999.147925] AppArmor DFA diff encoded transition state without header flag
+[  999.245161] AppArmor DFA diff encoded transition state without header flag
+[  999.637635] kauditd_printk_skb: 29 callbacks suppressed
+[  999.637687] audit: type=1400 audit(1778518978.497:94): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2619 comm="stress-ng"
+[  999.739342] AppArmor DFA diff encoded transition state without header flag
+[  999.739592] audit: type=1400 audit(1778518978.599:95): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[  999.765400] AppArmor DFA diff encoded transition state without header flag
+[  999.804246] audit: type=1400 audit(1778518978.643:96): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1000.194194]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1000.690917] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1000.766679] audit: type=1400 audit(1778518979.614:97): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2605 comm="stress-ng"
+[ 1000.828851] audit: type=1400 audit(1778518979.689:98): apparmor="STATUS" info="invalid profile format" error=-93 profile="unconfined" pid=2619 comm="stress-ng"
+[ 1000.998675] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1001.274807]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1001.483070] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1001.755122] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1002.125357]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1002.300199] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1002.735001] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1002.931630] AppArmor DFA diff encoded transition state without header flag
+[ 1002.933870] audit: type=1400 audit(1778518981.792:99): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1003.045878] AppArmor DFA diff encoded transition state without header flag
+[ 1003.054101]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1003.061312] audit: type=1400 audit(1778518981.905:100): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1003.875722] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1004.445604] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1004.582694] AppArmor DFA diff encoded transition state without header flag
+[ 1004.582976] audit: type=1400 audit(1778518983.444:101): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1004.729803]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1004.791020] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1004.942259] AppArmor DFA diff encoded transition state without header flag
+[ 1004.942577] audit: type=1400 audit(1778518983.798:102): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1005.056229] AppArmor DFA diff encoded transition state without header flag
+[ 1005.056463] audit: type=1400 audit(1778518983.914:103): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1005.521632] AppArmor DFA diff encoded transition state without header flag
+[ 1005.521944] audit: type=1400 audit(1778518984.383:104): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1005.563676] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1005.646973]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1005.740561] AppArmor DFA diff encoded transition state without header flag
+[ 1005.742576] audit: type=1400 audit(1778518984.600:105): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1005.851860] hdmi-audio-codec hdmi-audio-codec.4.auto: Only one simultaneous stream supported!
+[ 1006.322231] AppArmor DFA diff encoded transition state without header flag
+[ 1006.328018] audit: type=1400 audit(1778518985.186:106): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1006.821970] hdmi-audio-codec hdmi-audio-codec.4.auto: ASoC error (-22): at snd_soc_dai_startup() on i2s-hifi
+[ 1009.231283]  davinci-mcasp.0-i2s-hifi: ASoC error (-22): at __soc_pcm_open() on davinci-mcasp.0-i2s-hifi
+[ 1013.734896] psi_monitor: pressure high: cpu=88% mem=0% io=7% (thresh cpu=80 mem=80 io=80)
+[ 1013.752393] psi_monitor: logging top 10 tasks under pressure:
+[ 1013.766427] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=445 rss(kB)=216236 io(kB)=0 score=110343
+[ 1013.795800] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=321 rss(kB)=135852 io(kB)=0 score=69531
+[ 1013.822702] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=445 rss(kB)=132132 io(kB)=0 score=68291
+[ 1013.850753] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=367 rss(kB)=132132 io(kB)=0 score=67901
+[ 1013.872236] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=3 cputime(ms)=229 rss(kB)=107264 io(kB)=0 score=54777
+[ 1013.908928] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=3 cputime(ms)=147 rss(kB)=107264 io(kB)=0 score=54367
+[ 1013.946453] psi_monitor: pid=4066 comm=cpu_hog_1 psi_flag=4 oncpu=3 cputime(ms)=130 rss(kB)=107264 io(kB)=0 score=54282
+[ 1013.979657] psi_monitor: pid=4074 comm=mem_hog_3 psi_flag=4 oncpu=3 cputime(ms)=83 rss(kB)=107264 io(kB)=0 score=54047
+[ 1014.009206] psi_monitor: pid=4069 comm=mem_hog_0 psi_flag=4 oncpu=1 cputime(ms)=83 rss(kB)=107264 io(kB)=0 score=54047
+[ 1014.040861] psi_monitor: pid=4073 comm=mem_hog_2 psi_flag=4 oncpu=2 cputime(ms)=75 rss(kB)=107264 io(kB)=0 score=54007
+[ 1024.046488] hrtimer: interrupt took 12175 ns
+[ 1024.232296] psi_monitor: pressure high: cpu=94% mem=0% io=2% (thresh cpu=80 mem=80 io=80)
+[ 1024.258338] psi_monitor: logging top 10 tasks under pressure:
+[ 1024.279239] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=475 rss(kB)=216364 io(kB)=0 score=110557
+[ 1024.314724] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=344 rss(kB)=135852 io(kB)=0 score=69646
+[ 1024.345891] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=471 rss(kB)=132132 io(kB)=0 score=68421
+[ 1024.379863] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=398 rss(kB)=132132 io(kB)=0 score=68056
+[ 1024.411410] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=1 cputime(ms)=252 rss(kB)=107648 io(kB)=0 score=55084
+[ 1024.442984] psi_monitor: pid=4066 comm=cpu_hog_1 psi_flag=4 oncpu=1 cputime(ms)=174 rss(kB)=107648 io(kB)=0 score=54694
+[ 1024.474977] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=2 cputime(ms)=172 rss(kB)=107648 io(kB)=0 score=54684
+[ 1024.514459] psi_monitor: pid=4074 comm=mem_hog_3 psi_flag=4 oncpu=2 cputime(ms)=112 rss(kB)=107648 io(kB)=0 score=54384
+[ 1024.549936] psi_monitor: pid=4069 comm=mem_hog_0 psi_flag=4 oncpu=1 cputime(ms)=111 rss(kB)=107648 io(kB)=0 score=54379
+[ 1024.595816] psi_monitor: pid=4073 comm=mem_hog_2 psi_flag=4 oncpu=1 cputime(ms)=100 rss(kB)=107648 io(kB)=0 score=54324
+[ 1034.727224] psi_monitor: pressure high: cpu=97% mem=0% io=0% (thresh cpu=80 mem=80 io=80)
+[ 1034.761991] psi_monitor: logging top 10 tasks under pressure:
+[ 1034.804274] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=498 rss(kB)=216364 io(kB)=0 score=110672
+[ 1034.908264] psi_monitor: pid=4320 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=14810 rss(kB)=1940 io(kB)=0 score=75020
+[ 1035.007829] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=361 rss(kB)=135852 io(kB)=0 score=69731
+[ 1035.113375] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=495 rss(kB)=132132 io(kB)=0 score=68541
+[ 1035.149077] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=2 cputime(ms)=270 rss(kB)=107776 io(kB)=0 score=55238
+[ 1035.178636] psi_monitor: pid=4066 comm=cpu_hog_1 psi_flag=4 oncpu=2 cputime(ms)=205 rss(kB)=107776 io(kB)=0 score=54913
+[ 1035.206407] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=2 cputime(ms)=195 rss(kB)=107776 io(kB)=0 score=54863
+[ 1035.234025] psi_monitor: pid=4074 comm=mem_hog_3 psi_flag=4 oncpu=2 cputime(ms)=135 rss(kB)=107776 io(kB)=0 score=54563
+[ 1035.261739] psi_monitor: pid=4069 comm=mem_hog_0 psi_flag=4 oncpu=2 cputime(ms)=131 rss(kB)=107776 io(kB)=0 score=54543
+[ 1035.291498] psi_monitor: pid=4072 comm=mem_hog_1 psi_flag=4 oncpu=2 cputime(ms)=124 rss(kB)=107776 io(kB)=0 score=54508
+[ 1045.482301] psi_monitor: pressure high: cpu=98% mem=0% io=0% (thresh cpu=80 mem=80 io=80)
+[ 1045.556250] psi_monitor: logging top 10 tasks under pressure:
+[ 1045.565604] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=512 rss(kB)=216364 io(kB)=0 score=110742
+[ 1045.628559] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=19819 rss(kB)=1940 io(kB)=0 score=100065
+[ 1045.703438] psi_monitor: pid=4321 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=19591 rss(kB)=1836 io(kB)=0 score=98873
+[ 1045.780875] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=376 rss(kB)=135852 io(kB)=0 score=69806
+[ 1045.859319] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=509 rss(kB)=132132 io(kB)=0 score=68611
+[ 1045.933263] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=429 rss(kB)=132132 io(kB)=0 score=68211
+[ 1046.006822] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=12002 rss(kB)=1736 io(kB)=0 score=60878
+[ 1046.081565] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=2 cputime(ms)=283 rss(kB)=107904 io(kB)=0 score=55367
+[ 1046.183211] psi_monitor: pid=4066 comm=cpu_hog_1 psi_flag=4 oncpu=1 cputime(ms)=219 rss(kB)=107904 io(kB)=0 score=55047
+[ 1046.276176] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=1 cputime(ms)=209 rss(kB)=107904 io(kB)=0 score=54997
+[ 1056.494766] psi_monitor: pressure high: cpu=98% mem=8% io=0% (thresh cpu=80 mem=80 io=80)
+[ 1056.657435] psi_monitor: logging top 10 tasks under pressure:
+[ 1056.677083] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=24984 rss(kB)=1940 io(kB)=0 score=125890
+[ 1056.691320] psi_monitor: pid=4321 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=24752 rss(kB)=1836 io(kB)=0 score=124678
+[ 1056.711885] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=523 rss(kB)=216364 io(kB)=0 score=110797
+[ 1056.734777] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=17093 rss(kB)=1736 io(kB)=0 score=86333
+[ 1056.758147] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=387 rss(kB)=135852 io(kB)=0 score=69861
+[ 1056.785812] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=522 rss(kB)=132132 io(kB)=0 score=68676
+[ 1056.819210] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=443 rss(kB)=132132 io(kB)=0 score=68281
+[ 1056.855846] psi_monitor: pid=4388 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=13092 rss(kB)=1932 io(kB)=0 score=66426
+[ 1056.893852] psi_monitor: pid=4451 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=8 rss(kB)=131436 io(kB)=0 score=65758
+[ 1056.930918] psi_monitor: pid=4418 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=12925 rss(kB)=1940 io(kB)=0 score=65595
+[ 1066.985242] psi_monitor: pressure high: cpu=98% mem=14% io=8% (thresh cpu=80 mem=80 io=80)
+[ 1067.095866] psi_monitor: logging top 10 tasks under pressure:
+[ 1067.174156] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=29897 rss(kB)=1940 io(kB)=0 score=150455
+[ 1067.301007] psi_monitor: pid=4321 comm=stress-ng psi_flag=0 oncpu=3 cputime(ms)=29693 rss(kB)=1836 io(kB)=0 score=149383
+[ 1067.430080] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=532 rss(kB)=216364 io(kB)=0 score=110842
+[ 1067.563783] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=21942 rss(kB)=1736 io(kB)=0 score=110578
+[ 1067.687647] psi_monitor: pid=4388 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=15496 rss(kB)=1932 io(kB)=0 score=78446
+[ 1067.806181] psi_monitor: pid=4418 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=15352 rss(kB)=1940 io(kB)=0 score=77730
+[ 1067.933212] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=407 rss(kB)=136108 io(kB)=0 score=70089
+[ 1068.056725] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=530 rss(kB)=132132 io(kB)=0 score=68716
+[ 1068.180016] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=451 rss(kB)=132132 io(kB)=0 score=68321
+[ 1068.300347] psi_monitor: pid=4435 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=13029 rss(kB)=1748 io(kB)=0 score=66019
+[ 1078.506232] psi_monitor: pressure high: cpu=98% mem=21% io=2% (thresh cpu=80 mem=80 io=80)
+[ 1078.599345] psi_monitor: logging top 10 tasks under pressure:
+[ 1078.623154] psi_monitor: pid=4320 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=35266 rss(kB)=1940 io(kB)=0 score=177300
+[ 1078.637737] psi_monitor: pid=4321 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=35068 rss(kB)=1836 io(kB)=0 score=176258
+[ 1078.649806] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=27255 rss(kB)=1736 io(kB)=0 score=137143
+[ 1078.664494] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=542 rss(kB)=216364 io(kB)=0 score=110892
+[ 1078.676898] psi_monitor: pid=4388 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=18136 rss(kB)=1932 io(kB)=0 score=91646
+[ 1078.690769] psi_monitor: pid=4418 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=18023 rss(kB)=1940 io(kB)=0 score=91085
+[ 1078.702864] psi_monitor: pid=4435 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=15711 rss(kB)=1748 io(kB)=0 score=79429
+[ 1078.715946] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=416 rss(kB)=136108 io(kB)=0 score=70134
+[ 1078.728731] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=541 rss(kB)=132132 io(kB)=0 score=68771
+[ 1078.743633] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=466 rss(kB)=132132 io(kB)=0 score=68396
+[ 1088.999592] psi_monitor: pressure high: cpu=98% mem=15% io=3% (thresh cpu=80 mem=80 io=80)
+[ 1089.060949] psi_monitor: logging top 10 tasks under pressure:
+[ 1089.103022] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=40126 rss(kB)=1940 io(kB)=0 score=201600
+[ 1089.205875] psi_monitor: pid=4321 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=39955 rss(kB)=1836 io(kB)=0 score=200693
+[ 1089.289763] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=32067 rss(kB)=1736 io(kB)=0 score=161203
+[ 1089.310091] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=555 rss(kB)=216364 io(kB)=0 score=110957
+[ 1089.330099] psi_monitor: pid=4388 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=20534 rss(kB)=1932 io(kB)=0 score=103636
+[ 1089.349708] psi_monitor: pid=4435 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=18171 rss(kB)=1748 io(kB)=0 score=91729
+[ 1089.370459] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=429 rss(kB)=136108 io(kB)=0 score=70199
+[ 1089.390859] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=553 rss(kB)=132132 io(kB)=0 score=68831
+[ 1089.411698] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=479 rss(kB)=132132 io(kB)=0 score=68461
+[ 1089.431663] psi_monitor: pid=4451 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=38 rss(kB)=131700 io(kB)=0 score=66040
+[ 1094.336144] AppArmor DFA diff encoded transition state without header flag
+[ 1094.350751] audit: type=1400 audit(1778519073.198:107): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1099.499410] psi_monitor: pressure high: cpu=98% mem=43% io=28% (thresh cpu=80 mem=80 io=80)
+[ 1099.628577] psi_monitor: logging top 10 tasks under pressure:
+[ 1099.673058] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=45124 rss(kB)=1940 io(kB)=0 score=226590
+[ 1099.730352] psi_monitor: pid=4321 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=44953 rss(kB)=1836 io(kB)=0 score=225683
+[ 1099.787367] psi_monitor: pid=4442 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=37007 rss(kB)=1736 io(kB)=0 score=185903
+[ 1099.844238] psi_monitor: pid=4388 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=22999 rss(kB)=1932 io(kB)=0 score=115961
+[ 1099.899542] psi_monitor: pid=4418 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=22685 rss(kB)=1940 io(kB)=0 score=114395
+[ 1099.951185] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=569 rss(kB)=217132 io(kB)=0 score=111411
+[ 1100.048833] psi_monitor: pid=4435 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=20666 rss(kB)=1748 io(kB)=0 score=104204
+[ 1100.128109] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=438 rss(kB)=136620 io(kB)=0 score=70500
+[ 1100.171352] psi_monitor: pid=1 comm=systemd psi_flag=0 oncpu=1 cputime(ms)=10067 rss(kB)=9308 io(kB)=14340 score=69329
+[ 1100.211437] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=584 rss(kB)=132132 io(kB)=0 score=68986
+[ 1110.502969] psi_monitor: pressure high: cpu=99% mem=63% io=41% (thresh cpu=80 mem=80 io=80)
+[ 1110.561724] psi_monitor: logging top 10 tasks under pressure:
+[ 1110.601864] psi_monitor: pid=4320 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=50138 rss(kB)=1940 io(kB)=0 score=251660
+[ 1110.669986] psi_monitor: pid=4321 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=49973 rss(kB)=1836 io(kB)=0 score=250783
+[ 1110.743417] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=3 cputime(ms)=41968 rss(kB)=1736 io(kB)=0 score=210708
+[ 1110.805482] psi_monitor: pid=4388 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=25497 rss(kB)=1932 io(kB)=0 score=128451
+[ 1110.866883] psi_monitor: pid=4418 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=25203 rss(kB)=1940 io(kB)=0 score=126985
+[ 1110.933080] psi_monitor: pid=4435 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=23215 rss(kB)=1748 io(kB)=0 score=116949
+[ 1110.999211] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=587 rss(kB)=217132 io(kB)=0 score=111501
+[ 1111.066708] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=453 rss(kB)=136620 io(kB)=0 score=70575
+[ 1111.102001] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=599 rss(kB)=132132 io(kB)=0 score=69061
+[ 1111.136112] psi_monitor: pid=2675 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=492 rss(kB)=132132 io(kB)=0 score=68526
+[ 1121.255091] psi_monitor: pressure high: cpu=99% mem=79% io=68% (thresh cpu=80 mem=80 io=80)
+[ 1121.300001] psi_monitor: logging top 10 tasks under pressure:
+[ 1121.333539] psi_monitor: pid=4320 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=55095 rss(kB)=1940 io(kB)=0 score=276445
+[ 1121.400839] psi_monitor: pid=4321 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=54942 rss(kB)=1836 io(kB)=0 score=275628
+[ 1121.471877] psi_monitor: pid=4442 comm=stress-ng psi_flag=20 oncpu=0 cputime(ms)=46852 rss(kB)=1736 io(kB)=0 score=235128
+[ 1121.547943] psi_monitor: pid=4388 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=27987 rss(kB)=1932 io(kB)=0 score=140901
+[ 1121.618596] psi_monitor: pid=4418 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=27700 rss(kB)=1940 io(kB)=0 score=139470
+[ 1121.686875] psi_monitor: pid=4435 comm=stress-ng psi_flag=0 oncpu=1 cputime(ms)=25744 rss(kB)=1748 io(kB)=0 score=129594
+[ 1121.754343] psi_monitor: pid=2616 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=620 rss(kB)=217516 io(kB)=0 score=111858
+[ 1121.824236] psi_monitor: pid=1 comm=systemd psi_flag=4 oncpu=3 cputime(ms)=10548 rss(kB)=9308 io(kB)=14340 score=71734
+[ 1121.886049] psi_monitor: pid=2615 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=469 rss(kB)=136620 io(kB)=0 score=70655
+[ 1121.951070] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=618 rss(kB)=132132 io(kB)=0 score=69156
+[ 1126.858817] AppArmor DFA diff encoded transition state without header flag
+[ 1126.859057] audit: type=1400 audit(1778519105.720:108): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2605 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1131.015152] hdmi-audio-codec hdmi-audio-codec.4.auto: HDMI: Unknown ELD version 0
+[ 1131.259609] AppArmor DFA diff encoded transition state without header flag
+[ 1131.266787] audit: type=1400 audit(1778519110.120:109): apparmor="STATUS" info="failed to unpack - dfa" error=-71 profile="unconfined" name="/usr/bin/pulseaudio-eg" pid=2619 comm="stress-ng" name="/usr/bin/pulseaudio-eg" offset=132
+[ 1131.759293] psi_kernel_test: loading out-of-tree module taints kernel.
+[ 1131.786381] psi_kernel_hogger loaded
+[ 1131.811194] psi_cpu_hog started
+[ 1131.815123] psi_mem_hog_wq started
+[ 1131.819091] psi_io_hog_wq started
+[ 1132.010725] psi_monitor: pressure high: cpu=87% mem=81% io=68% (thresh cpu=80 mem=80 io=80)
+[ 1132.022226] psi_monitor: logging top 10 tasks under pressure:
+[ 1132.054784] psi_monitor: pid=4066 comm=cpu_hog_1 psi_flag=4 oncpu=0 cputime(ms)=603 rss(kB)=295808 io(kB)=0 score=150919
+[ 1132.066002] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=2 cputime(ms)=544 rss(kB)=295808 io(kB)=0 score=150624
+[ 1132.118737] psi_monitor: pid=4050 comm=cpu_hog_0 psi_flag=4 oncpu=1 cputime(ms)=428 rss(kB)=295808 io(kB)=0 score=150044
+[ 1132.130013] psi_monitor: pid=4074 comm=mem_hog_3 psi_flag=4 oncpu=2 cputime(ms)=374 rss(kB)=295808 io(kB)=0 score=149774
+[ 1132.169562] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=2 cputime(ms)=372 rss(kB)=295808 io(kB)=0 score=149764
+[ 1132.180771] psi_monitor: pid=4073 comm=mem_hog_2 psi_flag=4 oncpu=2 cputime(ms)=350 rss(kB)=295808 io(kB)=0 score=149654
+[ 1132.198670] psi_monitor: pid=4069 comm=mem_hog_0 psi_flag=4 oncpu=2 cputime(ms)=339 rss(kB)=295808 io(kB)=0 score=149599
+[ 1132.209778] psi_monitor: pid=4072 comm=mem_hog_1 psi_flag=4 oncpu=2 cputime(ms)=322 rss(kB)=295808 io(kB)=0 score=149514
+[ 1132.220900] psi_monitor: pid=2688 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=656 rss(kB)=54720 io(kB)=0 score=30640
+[ 1132.231880] psi_monitor: pid=3022 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=610 rss(kB)=14220 io(kB)=5524 score=15684
+[ 1142.246710] psi_monitor: pressure high: cpu=91% mem=32% io=41% (thresh cpu=80 mem=80 io=80)
+[ 1142.255545] psi_monitor: logging top 10 tasks under pressure:
+[ 1142.273164] psi_monitor: pid=3021 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=1743 rss(kB)=178996 io(kB)=16732 score=114945
+[ 1142.294802] psi_monitor: pid=4497 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=671 rss(kB)=178996 io(kB)=128 score=92981
+[ 1142.322759] psi_monitor: pid=4496 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=643 rss(kB)=178996 io(kB)=0 score=92713
+[ 1142.342807] psi_monitor: pid=4499 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=432 rss(kB)=178996 io(kB)=0 score=91658
+[ 1142.370735] psi_monitor: pid=4500 comm=ffmpeg psi_flag=0 oncpu=2 cputime(ms)=427 rss(kB)=178996 io(kB)=0 score=91633
+[ 1142.394724] psi_monitor: pid=4501 comm=ffmpeg psi_flag=4 oncpu=3 cputime(ms)=689 rss(kB)=168956 io(kB)=0 score=87923
+[ 1142.422785] psi_monitor: pid=4502 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=564 rss(kB)=168956 io(kB)=0 score=87298
+[ 1142.446816] psi_monitor: pid=4503 comm=ffmpeg psi_flag=0 oncpu=3 cputime(ms)=528 rss(kB)=168956 io(kB)=0 score=87118
+[ 1142.478735] psi_monitor: pid=4504 comm=ffmpeg psi_flag=0 oncpu=3 cputime(ms)=447 rss(kB)=168956 io(kB)=0 score=86713
+[ 1142.498744] psi_monitor: pid=4505 comm=ffmpeg psi_flag=0 oncpu=3 cputime(ms)=411 rss(kB)=168956 io(kB)=0 score=86533
+[ 1152.742846] psi_monitor: pressure high: cpu=80% mem=9% io=25% (thresh cpu=80 mem=80 io=80)
+[ 1152.751569] psi_monitor: logging top 10 tasks under pressure:
+[ 1152.774874] psi_monitor: pid=4496 comm=ffmpeg psi_flag=0 oncpu=0 cputime(ms)=2091 rss(kB)=250444 io(kB)=0 score=135677
+[ 1152.806844] psi_monitor: pid=4502 comm=ffmpeg psi_flag=4 oncpu=0 cputime(ms)=1711 rss(kB)=251436 io(kB)=0 score=134273
+[ 1152.834847] psi_monitor: pid=4497 comm=ffmpeg psi_flag=4 oncpu=1 cputime(ms)=1629 rss(kB)=250444 io(kB)=128 score=133495
+[ 1152.854898] psi_monitor: pid=4505 comm=ffmpeg psi_flag=4 oncpu=2 cputime(ms)=1524 rss(kB)=251436 io(kB)=0 score=133338
+[ 1152.878913] psi_monitor: pid=4500 comm=ffmpeg psi_flag=4 oncpu=0 cputime(ms)=1569 rss(kB)=250444 io(kB)=0 score=133067
+[ 1152.903088] psi_monitor: pid=4503 comm=ffmpeg psi_flag=20 oncpu=0 cputime(ms)=1448 rss(kB)=251436 io(kB)=0 score=132958
+[ 1152.926958] psi_monitor: pid=4504 comm=ffmpeg psi_flag=4 oncpu=0 cputime(ms)=1276 rss(kB)=251436 io(kB)=0 score=132098
+[ 1152.950933] psi_monitor: pid=4050 comm=cpu_hog_0 psi_flag=4 oncpu=2 cputime(ms)=5041 rss(kB)=183840 io(kB)=0 score=117125
+[ 1152.974900] psi_monitor: pid=4068 comm=cpu_hog_3 psi_flag=4 oncpu=0 cputime(ms)=4877 rss(kB)=183840 io(kB)=0 score=116305
+[ 1152.998911] psi_monitor: pid=4067 comm=cpu_hog_2 psi_flag=4 oncpu=3 cputime(ms)=4654 rss(kB)=183840 io(kB)=0 score=115190
+[ 1181.810856] psi_cpu_hog finished
+[ 1182.739998] psi_mem_hog_wq finished
+[ 1198.028751] ------------[ cut here ]------------
+[ 1198.033530] refcount_t: addition on 0; use-after-free.
+[ 1198.051076] WARNING: at refcount_warn_saturate+0xc8/0x144, CPU#3: rmmod/4601
+[ 1198.058217] Modules linked in: psi_kernel_test(O-) cuse binfmt_misc snd_seq snd_seq_device ppp_generic slhc algif_rng ax25 atm af_alg tun xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack_netlink nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo xt_addrtype nft_compat x_tables nf_tables nfnetlink br_netfilter bridge stp llc wl18xx wlcore mac80211 cfg80211 libarc4 dwc3 pru_rproc irq_pruss_intc snd_soc_simple_card wlcore_sdio snd_soc_simple_card_utils dwc3_am62 rti_wdt snd_soc_davinci_mcasp snd_soc_ti_udma snd_soc_hdmi_codec snd_soc_ti_edma snd_soc_ti_sdma snd_soc_core snd_pcm_dmaengine snd_pcm snd_timer sa2ul authenc pruss snd soundcore gb_uart(C) gb_spi(C) gb_raw(C) gb_loopback(C) gb_log(C) gb_i2c(C) gb_hid(C) gb_gpio(C) gb_gbphy(C) gb_firmware(C) gb_spilib(C) gb_bootrom(C) greybus ieee802154_socket mac802154 ieee802154
+[ 1198.133148] CPU: 3 UID: 0 PID: 4601 Comm: rmmod Tainted: G         C O        7.0.0-rc4+ #4 PREEMPTLAZY
+[ 1198.142647] Tainted: [C]=CRAP, [O]=OOT_MODULE
+[ 1198.147012] Hardware name: BeagleBoard.org BeaglePlay (DT)
+[ 1198.152510] pstate: 60000005 (nZCv daif -PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 1198.159480] pc : refcount_warn_saturate+0xc8/0x144
+[ 1198.164297] lr : refcount_warn_saturate+0xc8/0x144
+[ 1198.169110] sp : ffff800085443d30
+[ 1198.172437] x29: ffff800085443d30 x28: ffff000070500000 x27: 0000000000000000
+[ 1198.179592] x26: 0000000000000000 x25: 0000000000000000 x24: 0000000000000000
+[ 1198.186743] x23: 0000000000000000 x22: 0000000000000800 x21: ffff800081f82338
+[ 1198.193893] x20: ffff000004fb8028 x19: ffff000004fb8000 x18: 0000000000000000
+[ 1198.201053] x17: ffff7ffff608f000 x16: ffff800082240000 x15: 0000000000000000
+[ 1198.208209] x14: 00003d08eed57800 x13: 000000000000039e x12: 0000000000000000
+[ 1198.215360] x11: 00000000000000c0 x10: 0000000000000ba0 x9 : ffff800085443ba0
+[ 1198.222521] x8 : ffff000070500c00 x7 : 0000000000000190 x6 : 0000000000000000
+[ 1198.229675] x5 : 0000000000000001 x4 : 0000000000001000 x3 : 0000000000000010
+[ 1198.236826] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000070500000
+[ 1198.243978] Call trace:
+[ 1198.246438]  refcount_warn_saturate+0xc8/0x144 (P)
+[ 1198.251254]  kthread_stop+0x228/0x344
+[ 1198.254932]  psi_hogger_exit+0x20/0xe10 [psi_kernel_test]
+[ 1198.260349]  __arm64_sys_delete_module+0x178/0x324
+[ 1198.265165]  invoke_syscall+0x48/0x110
+[ 1198.268937]  el0_svc_common.constprop.0+0x40/0xe0
+[ 1198.273652]  do_el0_svc+0x1c/0x28
+[ 1198.276982]  el0_svc+0x34/0x10c
+[ 1198.280150]  el0t_64_sync_handler+0xa0/0xe4
+[ 1198.284359]  el0t_64_sync+0x198/0x19c
+[ 1198.288049] ---[ end trace 0000000000000000 ]---
+[ 1198.322592] ------------[ cut here ]------------
+[ 1198.327275] WARNING: at kthread_stop+0x230/0x344, CPU#3: rmmod/4601
+[ 1198.333577] Modules linked in: psi_kernel_test(O-) cuse binfmt_misc snd_seq snd_seq_device ppp_generic slhc algif_rng ax25 atm af_alg tun xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack_netlink nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo xt_addrtype nft_compat x_tables nf_tables nfnetlink br_netfilter bridge stp llc wl18xx wlcore mac80211 cfg80211 libarc4 dwc3 pru_rproc irq_pruss_intc snd_soc_simple_card wlcore_sdio snd_soc_simple_card_utils dwc3_am62 rti_wdt snd_soc_davinci_mcasp snd_soc_ti_udma snd_soc_hdmi_codec snd_soc_ti_edma snd_soc_ti_sdma snd_soc_core snd_pcm_dmaengine snd_pcm snd_timer sa2ul authenc pruss snd soundcore gb_uart(C) gb_spi(C) gb_raw(C) gb_loopback(C) gb_log(C) gb_i2c(C) gb_hid(C) gb_gpio(C) gb_gbphy(C) gb_firmware(C) gb_spilib(C) gb_bootrom(C) greybus ieee802154_socket mac802154 ieee802154
+[ 1198.408494] CPU: 3 UID: 0 PID: 4601 Comm: rmmod Tainted: G        WC O        7.0.0-rc4+ #4 PREEMPTLAZY
+[ 1198.418002] Tainted: [W]=WARN, [C]=CRAP, [O]=OOT_MODULE
+[ 1198.423244] Hardware name: BeagleBoard.org BeaglePlay (DT)
+[ 1198.428746] pstate: 60000005 (nZCv daif -PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 1198.435726] pc : kthread_stop+0x230/0x344
+[ 1198.439762] lr : kthread_stop+0x228/0x344
+[ 1198.443789] sp : ffff800085443d40
+[ 1198.447113] x29: ffff800085443d40 x28: ffff000070500000 x27: 0000000000000000
+[ 1198.454268] x26: 0000000000000000 x25: 0000000000000000 x24: 0000000000000000
+[ 1198.461429] x23: 0000000000000000 x22: 0000000000000800 x21: ffff800081f82338
+[ 1198.468589] x20: ffff000004fb8028 x19: ffff000004fb8000 x18: 0000000000000000
+[ 1198.475741] x17: ffff7ffff608f000 x16: ffff800082240000 x15: 0000000000000000
+[ 1198.482899] x14: 00003d08eed57800 x13: 000000000000039e x12: 0000000000000000
+[ 1198.490058] x11: 00000000000000c0 x10: 0000000000000ba0 x9 : ffff800085443ba0
+[ 1198.497217] x8 : ffff000070500c00 x7 : 0000000000000190 x6 : 0000000000000000
+[ 1198.504369] x5 : 0000000000000001 x4 : 0000000000001000 x3 : 0000000000000010
+[ 1198.511523] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 000000000040804c
+[ 1198.518676] Call trace:
+[ 1198.521138]  kthread_stop+0x230/0x344 (P)
+[ 1198.525188]  psi_hogger_exit+0x20/0xe10 [psi_kernel_test]
+[ 1198.530632]  __arm64_sys_delete_module+0x178/0x324
+[ 1198.535472]  invoke_syscall+0x48/0x110
+[ 1198.539243]  el0_svc_common.constprop.0+0x40/0xe0
+[ 1198.543967]  do_el0_svc+0x1c/0x28
+[ 1198.547303]  el0_svc+0x34/0x10c
+[ 1198.550471]  el0t_64_sync_handler+0xa0/0xe4
+[ 1198.554683]  el0t_64_sync+0x198/0x19c
+[ 1198.558376] ---[ end trace 0000000000000000 ]---
+[ 1198.803130] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000000
+[ 1198.812107] Mem abort info:
+[ 1198.817450]   ESR = 0x0000000096000004
+[ 1198.822106]   EC = 0x25: DABT (current EL), IL = 32 bits
+[ 1198.829536]   SET = 0, FnV = 0
+[ 1198.834050]   EA = 0, S1PTW = 0
+[ 1198.837831]   FSC = 0x04: level 0 translation fault
+[ 1198.843929] Data abort info:
+[ 1198.848489]   ISV = 0, ISS = 0x00000004, ISS2 = 0x00000000
+[ 1198.855507]   CM = 0, WnR = 0, TnD = 0, TagAccess = 0
+[ 1198.861057]   GCS = 0, Overlay = 0, DirtyBit = 0, Xs = 0
+[ 1198.866717] user pgtable: 4k pages, 48-bit VAs, pgdp=0000000086d54000
+[ 1198.873660] [0000000000000000] pgd=0000000000000000, p4d=0000000000000000
+[ 1198.880830] Internal error: Oops: 0000000096000004 [#1]  SMP
+[ 1198.886506] Modules linked in: psi_kernel_test(O-) cuse binfmt_misc snd_seq snd_seq_device ppp_generic slhc algif_rng ax25 atm af_alg tun xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack_netlink nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo xt_addrtype nft_compat x_tables nf_tables nfnetlink br_netfilter bridge stp llc wl18xx wlcore mac80211 cfg80211 libarc4 dwc3 pru_rproc irq_pruss_intc snd_soc_simple_card wlcore_sdio snd_soc_simple_card_utils dwc3_am62 rti_wdt snd_soc_davinci_mcasp snd_soc_ti_udma snd_soc_hdmi_codec snd_soc_ti_edma snd_soc_ti_sdma snd_soc_core snd_pcm_dmaengine snd_pcm snd_timer sa2ul authenc pruss snd soundcore gb_uart(C) gb_spi(C) gb_raw(C) gb_loopback(C) gb_log(C) gb_i2c(C) gb_hid(C) gb_gpio(C) gb_gbphy(C) gb_firmware(C) gb_spilib(C) gb_bootrom(C) greybus ieee802154_socket mac802154 ieee802154
+[ 1198.961442] CPU: 0 UID: 0 PID: 4601 Comm: rmmod Tainted: G        WC O        7.0.0-rc4+ #4 PREEMPTLAZY
+[ 1198.970943] Tainted: [W]=WARN, [C]=CRAP, [O]=OOT_MODULE
+[ 1198.976189] Hardware name: BeagleBoard.org BeaglePlay (DT)
+[ 1198.981690] pstate: 60000005 (nZCv daif -PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 1198.988664] pc : kthread_stop+0x1ec/0x344
+[ 1198.992705] lr : kthread_stop+0x228/0x344
+[ 1198.996734] sp : ffff800085443d40
+[ 1199.000055] x29: ffff800085443d40 x28: ffff000070500000 x27: 0000000000000000
+[ 1199.007206] x26: 0000000000000000 x25: 0000000000000000 x24: 0000000000000000
+[ 1199.014361] x23: 0000000000000000 x22: 0000000000000800 x21: 0000000000000000
+[ 1199.021512] x20: ffff000004fb8028 x19: ffff000004fb8000 x18: 0000000000000000
+[ 1199.028664] x17: ffff7ffff608f000 x16: ffff800082240000 x15: 0000000000000000
+[ 1199.035818] x14: 00003d08eed57800 x13: 000000000000039e x12: 0000000000000000
+[ 1199.042973] x11: 00000000000000c0 x10: 0000000000000ba0 x9 : ffff800085443ba0
+[ 1199.050131] x8 : ffff000070500c00 x7 : 0000000000000190 x6 : 0000000000000000
+[ 1199.057285] x5 : 0000000000000001 x4 : 0000000000001000 x3 : 0000000000000010
+[ 1199.064441] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 000000000040804c
+[ 1199.071597] Call trace:
+[ 1199.074063]  kthread_stop+0x1ec/0x344 (P)
+[ 1199.078106]  psi_hogger_exit+0x20/0xe10 [psi_kernel_test]
+[ 1199.083535]  __arm64_sys_delete_module+0x178/0x324
+[ 1199.088362]  invoke_syscall+0x48/0x110
+[ 1199.092149]  el0_svc_common.constprop.0+0x40/0xe0
+[ 1199.096883]  do_el0_svc+0x1c/0x28
+[ 1199.100222]  el0_svc+0x34/0x10c
+[ 1199.103391]  el0t_64_sync_handler+0xa0/0xe4
+[ 1199.107595]  el0t_64_sync+0x198/0x19c
+[ 1199.111297] Code: c8017e60 35ffffa1 17ffffa1 f98002b1 (c85f7ea0)
+[ 1199.117413] ---[ end trace 0000000000000000 ]---
+[ 1452.328298] psi_io_hog_wq finished
+debian@BeaglePlay:~$
