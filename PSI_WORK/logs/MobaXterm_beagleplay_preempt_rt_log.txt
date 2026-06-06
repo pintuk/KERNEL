@@ -1,0 +1,540 @@
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm
+some avg10=0.06 avg60=0.14 avg300=0.14 total=137720736
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=16460642
+full avg10=0.00 avg60=0.00 avg300=0.00 total=14715910
+------------
+top - 14:49:22 up  6:05,  2 users,  load average: 0.51, 0.49, 0.47
+Tasks: 202 total,   1 running, 201 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.6 us,  2.6 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1939.6 total,   1395.1 free,    178.2 used,    366.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1738.9 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36531 debian    20   0    7164   3176   2420 R  17.6   0.2   0:00.05 top
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.29 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.37 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:09.90 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:04.86 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.85 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.86 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.11 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.06 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.35 rcuc/1
+     29 root      -2   0       0      0      0 S   0.0   0.0   0:05.81 ktimers/1
+     30 root      20   0       0      0      0 S   0.0   0.0   0:19.48 ksoftirqd/1
+     33 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2
+     34 root      -2   0       0      0      0 S   0.0   0.0   0:01.37 irq_work/2
+     35 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/2
+     36 root      -2   0       0      0      0 S   0.0   0.0   0:03.22 rcuc/2
+     37 root      -2   0       0      0      0 S   0.0   0.0   0:08.29 ktimers/2
+     38 root      20   0       0      0      0 S   0.0   0.0   0:12.24 ksoftirqd/2
+     40 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-kblockd
+     41 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/3
+     42 root      -2   0       0      0      0 S   0.0   0.0   0:01.38 irq_work/3
+     43 root      rt   0       0      0      0 S   0.0   0.0   0:00.11 migration/3
+     44 root      -2   0       0      0      0 S   0.0   0.0   0:03.42 rcuc/3
+     45 root      -2   0       0      0      0 S   0.0   0.0   0:05.78 ktimers/3
+     46 root      20   0       0      0      0 S   0.0   0.0   0:13.22 ksoftirqd/3
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         177        1395           1         366        1739
+Swap:           2047           0        2047
+Total:          3987         177        3443
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=52.29 avg60=14.62 avg300=3.42 total=149028180
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=16.57 avg60=4.37 avg300=0.98 total=19796937
+full avg10=0.62 avg60=0.20 avg300=0.04 total=14980918
+------------
+top - 14:50:46 up  6:06,  2 users,  load average: 2.76, 0.97, 0.62
+Tasks: 229 total,  10 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.0 us, 31.7 sy,  0.0 ni,  0.0 id,  0.0 wa,  2.4 hi,  0.8 si,  0.0 st
+MiB Mem :   1939.6 total,    692.8 free,    867.5 used,    379.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1047.1 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36783 debian    20   0  838452 495076   1336 S  60.0  24.9   0:10.26 psi_user_test
+  36738 debian    20   0  148432  46040   1340 R  56.0   2.3   0:06.37 stress-ng
+  36737 debian    20   0  148432  55940   1340 R  52.0   2.8   0:06.53 stress-ng
+  36732 debian    20   0   17356   4408   2272 R  40.0   0.2   0:05.29 stress-ng
+  36730 debian    20   0   17356   4408   2272 R  24.0   0.2   0:05.43 stress-ng
+  36728 debian    20   0   17356   4408   2272 R  20.0   0.2   0:04.92 stress-ng
+    279 root      20   0       0      0      0 D   8.0   0.0   0:03.10 jbd2/mmcblk0p2-8
+  36809 debian    20   0    7168   3160   2372 R   8.0   0.2   0:00.08 top
+    135 root     -51   0       0      0      0 S   4.0   0.0   0:02.10 irq/296-mmc0
+  31916 root      20   0       0      0      0 I   4.0   0.0   0:01.60 kworker/u16:3-ext4-rsv-conversion
+  35748 root      20   0       0      0      0 I   4.0   0.0   0:00.36 kworker/u16:2-flush-179:0
+  36731 debian    20   0   17356   4408   2272 R   4.0   0.2   0:04.91 stress-ng
+  36735 debian    20   0   17356   2040   1656 R   4.0   0.1   0:01.64 stress-ng
+  36736 debian    20   0   17356   1928   1544 D   4.0   0.1   0:01.61 stress-ng
+  36742 root       0 -20       0      0      0 I   4.0   0.0   0:00.73 kworker/0:2H-kblockd
+  36815 debian    20   0       0      0      0 R   4.0   0.0   0:00.01 sed
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.56 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.48 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:09.95 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:04.86 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.89 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.88 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.37 rcuc/1
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         825         734           3         379        1088
+Swap:           2047           0        2047
+Total:          3987         825        2782
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+
+
+
+
+Done....
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=65.58 avg60=22.38 avg300=5.41 total=154996543
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=17.59 avg60=6.16 avg300=1.46 total=21276733
+full avg10=0.28 avg60=0.17 avg300=0.04 total=14983581
+------------
+top - 14:50:54 up  6:06,  2 users,  load average: 4.78, 1.46, 0.79
+Tasks: 229 total,  10 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 74.1 us, 23.4 sy,  0.0 ni,  0.0 id,  0.0 wa,  1.9 hi,  0.6 si,  0.0 st
+MiB Mem :   1939.6 total,    776.6 free,    776.2 used,    386.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1138.5 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36783 debian    20   0  838452 394288   1336 S 238.5  19.9   0:18.16 psi_user_test
+  36899 debian    20   0  582768  42032  30556 R 192.3   2.1   0:00.90 node
+  36731 debian    20   0   17356   4408   2272 R 100.0   0.2   0:06.45 stress-ng
+  36728 debian    20   0   17356   4408   2272 R 100.0   0.2   0:07.12 stress-ng
+  36729 debian    20   0   17356   4408   2272 R  50.0   0.2   0:07.27 stress-ng
+  36732 debian    20   0   17356   4408   2272 R  42.3   0.2   0:07.44 stress-ng
+  36737 debian    20   0  148432  94088   1340 R  26.9   4.7   0:08.42 stress-ng
+  36738 debian    20   0  148432 132800   1340 R  23.1   6.7   0:08.28 stress-ng
+  36730 debian    20   0   17356   4408   2272 R  19.2   0.2   0:07.24 stress-ng
+    279 root      20   0       0      0      0 S  11.5   0.0   0:03.59 jbd2/mmcblk0p2-8
+  36735 debian    20   0   17356   2040   1656 D  11.5   0.1   0:02.08 stress-ng
+  36736 debian    20   0   17356   1928   1544 D  11.5   0.1   0:02.05 stress-ng
+  36909 debian    20   0    7168   3160   2372 R  11.5   0.2   0:00.07 top
+    135 root     -51   0       0      0      0 R   7.7   0.0   0:02.42 irq/296-mmc0
+  32049 root       0 -20       0      0      0 D   7.7   0.0   0:00.02 kworker/0:1H+kblockd
+  34191 root      20   0       0      0      0 I   3.8   0.0   0:00.92 kworker/u16:1-flush-179:0
+  35748 root      20   0       0      0      0 I   3.8   0.0   0:00.50 kworker/u16:2-flush-179:0
+  36251 root      20   0       0      0      0 I   3.8   0.0   0:00.25 kworker/u16:4-flush-179:0
+  36792 root       0 -20       0      0      0 I   3.8   0.0   0:00.06 kworker/1:2H-kblockd
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.62 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.48 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:09.96 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:05.04 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.91 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.88 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         908         643           3         387        1005
+Swap:           2047           0        2047
+Total:          3987         908        2691
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+Done....
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=69.81 avg60=34.17 avg300=9.03 total=167191816
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=20.86 avg60=9.70 avg300=2.52 total=24924772
+full avg10=0.05 avg60=0.13 avg300=0.04 total=14989177
+------------
+top - 14:51:10 up  6:07,  2 users,  load average: 7.39, 2.21, 1.04
+Tasks: 227 total,   8 running, 219 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 75.6 us, 22.2 sy,  0.0 ni,  0.0 id,  0.0 wa,  1.5 hi,  0.7 si,  0.0 st
+MiB Mem :   1939.6 total,    701.1 free,    835.3 used,    403.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1079.3 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36783 debian    20   0  838452 419820   1336 S 178.3  21.1   0:37.80 psi_user_test
+  36737 debian    20   0  148432  16664   1340 D  78.3   0.8   0:13.53 stress-ng
+  36731 debian    20   0   17356   4408   2272 R  47.8   0.2   0:11.16 stress-ng
+  36730 debian    20   0   17356   4408   2272 R  26.1   0.2   0:11.40 stress-ng
+  36732 debian    20   0   17356   4408   2272 R  26.1   0.2   0:11.19 stress-ng
+  36728 debian    20   0   17356   4408   2272 R  21.7   0.2   0:11.04 stress-ng
+  36729 debian    20   0   17356   4408   2272 R  21.7   0.2   0:12.30 stress-ng
+  36738 debian    20   0  148432  70048   1340 D  21.7   3.5   0:12.65 stress-ng
+  36992 debian    20   0    7168   3020   2236 R  13.0   0.2   0:00.07 top
+    135 root     -51   0       0      0      0 S   4.3   0.0   0:03.03 irq/296-mmc0
+    279 root      20   0       0      0      0 D   4.3   0.0   0:04.62 jbd2/mmcblk0p2-8
+  35100 root      20   0       0      0      0 I   4.3   0.0   0:00.61 kworker/u16:0-flush-179:0
+  36735 debian    20   0   17356   2040   1656 R   4.3   0.1   0:02.86 stress-ng
+  36742 root       0 -20       0      0      0 I   4.3   0.0   0:01.37 kworker/0:2H-kblockd
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.63 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.49 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:09.99 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:05.35 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.94 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.89 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.38 rcuc/1
+     29 root      -2   0       0      0      0 S   0.0   0.0   0:05.85 ktimers/1
+     30 root      20   0       0      0      0 S   0.0   0.0   0:19.59 ksoftirqd/1
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         788         747           3         403        1125
+Swap:           2047           0        2047
+Total:          3987         788        2795
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+Done....
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=71.22 avg60=40.05 avg300=11.17 total=173529614
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=21.47 avg60=11.55 avg300=3.17 total=26822402
+full avg10=0.01 avg60=0.11 avg300=0.03 total=14992537
+------------
+top - 14:51:19 up  6:07,  2 users,  load average: 9.54, 2.84, 1.26
+Tasks: 228 total,  10 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 81.9 us, 14.7 sy,  0.0 ni,  0.0 id,  0.0 wa,  2.6 hi,  0.9 si,  0.0 st
+MiB Mem :   1939.6 total,    688.5 free,    840.2 used,    410.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1074.5 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36783 debian    20   0  838452 329952   1336 S 109.1  16.6   0:48.82 psi_user_test
+  36738 debian    20   0  148432 132800   1340 R  54.5   6.7   0:14.82 stress-ng
+  37033 debian    20   0  594840  59204  30864 R  50.0   3.0   0:02.95 node
+  36728 debian    20   0   17356   4408   2272 R  40.9   0.2   0:13.13 stress-ng
+  36729 debian    20   0   17356   4408   2272 R  40.9   0.2   0:14.42 stress-ng
+  37050 debian    20   0    7168   3040   2256 R  13.6   0.2   0:00.07 top
+  32049 root       0 -20       0      0      0 I   9.1   0.0   0:00.67 kworker/0:1H-kblockd
+  36735 debian    20   0   17356   2040   1656 R   9.1   0.1   0:03.35 stress-ng
+  36736 debian    20   0   17356   1928   1544 R   9.1   0.1   0:03.29 stress-ng
+  36737 debian    20   0  148432 132800   1340 R   9.1   6.7   0:15.53 stress-ng
+    135 root     -51   0       0      0      0 S   4.5   0.0   0:03.36 irq/296-mmc0
+    279 root      20   0       0      0      0 S   4.5   0.0   0:05.15 jbd2/mmcblk0p2-8
+  35100 root      20   0       0      0      0 I   4.5   0.0   0:00.80 kworker/u16:0-flush-179:0
+  36731 debian    20   0   17356   4408   2272 R   4.5   0.2   0:13.07 stress-ng
+  36732 debian    20   0   17356   4408   2272 R   4.5   0.2   0:13.39 stress-ng
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.68 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.49 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:10.00 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:05.53 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.96 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.89 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.38 rcuc/1
+     29 root      -2   0       0      0      0 S   0.0   0.0   0:05.85 ktimers/1
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         856         672           3         410        1058
+Swap:           2047           0        2047
+Total:          3987         856        2720
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+Done....
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=59.38 avg60=44.47 avg300=13.57 total=182432472
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=20.50 avg60=13.42 avg300=3.98 total=30030817
+full avg10=1.99 avg60=0.44 avg300=0.11 total=15399855
+------------
+top - 14:51:34 up  6:07,  2 users,  load average: 10.55, 3.40, 1.47
+Tasks: 216 total,   1 running, 215 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 53.0 us, 31.3 sy,  0.0 ni,  3.6 id, 10.8 wa,  1.2 hi,  0.0 si,  0.0 st
+MiB Mem :   1939.6 total,    840.0 free,    676.4 used,    423.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1240.7 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  36783 debian    20   0  838452 446532   1336 S 294.4  22.5   1:14.17 psi_user_test
+  37107 debian    20   0    7176   3188   2412 R  22.2   0.2   0:00.07 top
+    135 root     -51   0       0      0      0 S   5.6   0.0   0:03.90 irq/296-mmc0
+    279 root      20   0       0      0      0 S   5.6   0.0   0:06.12 jbd2/mmcblk0p2-8
+  36793 root       0 -20       0      0      0 I   5.6   0.0   0:00.21 kworker/2:1H-kblockd
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.69 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.50 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:10.01 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:05.69 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:04.97 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.90 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.39 rcuc/1
+     29 root      -2   0       0      0      0 S   0.0   0.0   0:05.86 ktimers/1
+     30 root      20   0       0      0      0 S   0.0   0.0   0:19.60 ksoftirqd/1
+     33 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2
+     34 root      -2   0       0      0      0 S   0.0   0.0   0:01.37 irq_work/2
+     35 root      rt   0       0      0      0 S   0.0   0.0   0:00.13 migration/2
+     36 root      -2   0       0      0      0 S   0.0   0.0   0:03.26 rcuc/2
+     37 root      -2   0       0      0      0 S   0.0   0.0   0:08.37 ktimers/2
+     38 root      20   0       0      0      0 S   0.0   0.0   0:12.35 ksoftirqd/2
+     40 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-kblockd
+     41 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/3
+     42 root      -2   0       0      0      0 S   0.0   0.0   0:01.38 irq_work/3
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         699         816           1         423        1217
+Swap:           2047           0        2047
+Total:          3987         699        2864
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+Done....
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$ cat /proc/pressure/cpu ; cat /proc/pressure/memory ; cat /proc/pressure/io ; echo "------------" ; top -n 1 ; echo "---------" ; free -tm ; ./mklatencyplot.bash
+some avg10=33.35 avg60=39.76 avg300=14.30 total=186984356
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+some avg10=13.85 avg60=13.75 avg300=4.65 total=32533898
+full avg10=3.74 avg60=1.77 avg300=0.45 total=16364061
+------------
+top - 14:51:52 up  6:07,  2 users,  load average: 9.92, 3.61, 1.57
+Tasks: 207 total,   1 running, 206 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.3 us,  5.1 sy,  0.0 ni, 93.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1939.6 total,   1243.6 free,    255.2 used,    440.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   1661.9 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  37309 debian    20   0    7168   3076   2308 R  11.8   0.2   0:00.05 top
+      1 root      20   0  164856   9832   7268 S   0.0   0.5   1:05.77 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq
+     14 root      20   0       0      0      0 S   0.0   0.0   0:31.54 ksoftirqd/0
+     15 root      -2   0       0      0      0 S   0.0   0.0   0:10.03 ktimers/0
+     16 root       0 -20       0      0      0 S   0.0   0.0   0:05.69 pr/legacy
+     17 root      -2   0       0      0      0 I   0.0   0.0   0:05.00 rcu_preempt
+     18 root      -2   0       0      0      0 S   0.0   0.0   0:00.01 rcub/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_worker/0
+     20 root      -2   0       0      0      0 S   0.0   0.0   0:02.91 rcuc/0
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_gp_kthread_worker
+     22 root      rt   0       0      0      0 S   0.0   0.0   0:00.12 migration/0
+     23 root      -2   0       0      0      0 S   0.0   0.0   0:03.07 irq_work/0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     26 root      -2   0       0      0      0 S   0.0   0.0   0:01.32 irq_work/1
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.18 migration/1
+     28 root      -2   0       0      0      0 S   0.0   0.0   0:03.40 rcuc/1
+     29 root      -2   0       0      0      0 S   0.0   0.0   0:05.87 ktimers/1
+     30 root      20   0       0      0      0 S   0.0   0.0   0:19.62 ksoftirqd/1
+     33 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2
+     34 root      -2   0       0      0      0 S   0.0   0.0   0:01.37 irq_work/2
+     35 root      rt   0       0      0      0 S   0.0   0.0   0:00.13 migration/2
+     36 root      -2   0       0      0      0 S   0.0   0.0   0:03.27 rcuc/2
+     37 root      -2   0       0      0      0 S   0.0   0.0   0:08.38 ktimers/2
+     38 root      20   0       0      0      0 S   0.0   0.0   0:12.36 ksoftirqd/2
+     40 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-kblockd
+     41 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/3
+     42 root      -2   0       0      0      0 S   0.0   0.0   0:01.38 irq_work/3
+     43 root      rt   0       0      0      0 S   0.0   0.0   0:00.11 migration/3
+     44 root      -2   0       0      0      0 S   0.0   0.0   0:03.48 rcuc/3
+     45 root      -2   0       0      0      0 S   0.0   0.0   0:05.85 ktimers/3
+     46 root      20   0       0      0      0 S   0.0   0.0   0:13.36 ksoftirqd/3
+---------
+               total        used        free      shared  buff/cache   available
+Mem:            1939         254        1243           1         440        1662
+Swap:           2047           0        2047
+Total:          3987         254        3291
+WARN: stat /dev/cpu_dma_latency failed: No such file or directory
+Done....
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$ dmesg | grep psi
+[    0.195417] psi_monitor: in-kernel PSI auto monitor (weighted + tracepoints) loaded
+[22005.837350] psi_monitor: pressure high: cpu=52% mem=0% io=16% (thresh cpu=50 mem=50 io=50)
+[22005.837698] psi_monitor: logging top 15 tasks under pressure:
+[22005.837724] psi_monitor: pid=36786 comm=cpu_hog_1 psi_flag=4 oncpu=3 cputime(ms)=3112 rss(kB)=380252 io(kB)=0 score=205686
+[22005.837737] psi_monitor: pid=36785 comm=cpu_hog_0 psi_flag=4 oncpu=3 cputime(ms)=2927 rss(kB)=380252 io(kB)=0 score=204761
+[22005.837745] psi_monitor: pid=36788 comm=mem_hog_1 psi_flag=4 oncpu=3 cputime(ms)=1616 rss(kB)=380252 io(kB)=0 score=198206
+[22005.837752] psi_monitor: pid=279 comm=jbd2/mmcblk0p2- psi_flag=4 oncpu=0 cputime(ms)=3114 rss(kB)=0 io(kB)=58128 score=73698
+[22005.837760] psi_monitor: pid=36737 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=6620 rss(kB)=69916 io(kB)=0 score=68058
+[22005.837767] psi_monitor: pid=36738 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=6453 rss(kB)=57432 io(kB)=0 score=60981
+[22005.837775] psi_monitor: pid=36729 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=5806 rss(kB)=4120 io(kB)=64 score=31154
+[22005.837782] psi_monitor: pid=36730 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=5523 rss(kB)=4256 io(kB)=0 score=29743
+[22005.837790] psi_monitor: pid=36732 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=5399 rss(kB)=4120 io(kB)=0 score=29055
+[22005.837799] psi_monitor: pid=36731 comm=stress-ng psi_flag=20 oncpu=1 cputime(ms)=5014 rss(kB)=4256 io(kB)=0 score=27198
+[22005.837807] psi_monitor: pid=36728 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=4973 rss(kB)=4120 io(kB)=0 score=26925
+[22005.837814] psi_monitor: pid=36823 comm=sudo psi_flag=4 oncpu=0 cputime(ms)=17 rss(kB)=2800 io(kB)=0 score=1485
+[22005.837822] psi_monitor: pid=36794 comm=mklatencyplot.b psi_flag=4 oncpu=3 cputime(ms)=24 rss(kB)=2644 io(kB)=0 score=1442
+[22005.837833] psi_monitor: pid=35296 comm=kworker/0:1+events psi_flag=20 oncpu=0 cputime(ms)=208 rss(kB)=0 io(kB)=0 score=1040
+[22005.837841] psi_monitor: pid=36822 comm=expr psi_flag=20 oncpu=3 cputime(ms)=5 rss(kB)=0 io(kB)=0 score=25
+[22010.057608] psi_kernel_test: disagrees about version of symbol module_layout
+[22016.077421] psi_monitor: pressure high: cpu=69% mem=0% io=18% (thresh cpu=50 mem=50 io=50)
+[22016.078055] psi_monitor: logging top 14 tasks under pressure:
+[22016.078155] psi_monitor: pid=36786 comm=cpu_hog_1 psi_flag=4 oncpu=0 cputime(ms)=6292 rss(kB)=346076 io(kB)=0 score=204498
+[22016.078173] psi_monitor: pid=36785 comm=cpu_hog_0 psi_flag=4 oncpu=1 cputime(ms)=5962 rss(kB)=346076 io(kB)=0 score=202848
+[22016.078181] psi_monitor: pid=36788 comm=mem_hog_1 psi_flag=20 oncpu=1 cputime(ms)=2957 rss(kB)=346076 io(kB)=0 score=187823
+[22016.078189] psi_monitor: pid=36789 comm=io_hog_0 psi_flag=4 oncpu=2 cputime(ms)=810 rss(kB)=346076 io(kB)=5864 score=182952
+[22016.078197] psi_monitor: pid=279 comm=jbd2/mmcblk0p2- psi_flag=1 oncpu=3 cputime(ms)=3781 rss(kB)=0 io(kB)=71828 score=90733
+[22016.078204] psi_monitor: pid=36729 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=8084 rss(kB)=4120 io(kB)=64 score=42544
+[22016.078213] psi_monitor: pid=36732 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=7919 rss(kB)=4120 io(kB)=0 score=41655
+[22016.078220] psi_monitor: pid=36730 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=7515 rss(kB)=4256 io(kB)=0 score=39703
+[22016.078228] psi_monitor: pid=36728 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=7445 rss(kB)=4120 io(kB)=0 score=39285
+[22016.078235] psi_monitor: pid=36731 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=7213 rss(kB)=4256 io(kB)=0 score=38193
+[22016.078243] psi_monitor: pid=36899 comm=node psi_flag=20 oncpu=3 cputime(ms)=2234 rss(kB)=51748 io(kB)=0 score=37044
+[22016.078251] psi_monitor: pid=36735 comm=stress-ng psi_flag=0 oncpu=2 cputime(ms)=2198 rss(kB)=1884 io(kB)=4 score=11936
+[22016.078259] psi_monitor: pid=36925 comm=sudo psi_flag=4 oncpu=0 cputime(ms)=51 rss(kB)=2976 io(kB)=0 score=1743
+[22016.078272] psi_monitor: pid=35296 comm=kworker/0:1+events psi_flag=20 oncpu=0 cputime(ms)=211 rss(kB)=0 io(kB)=0 score=1055
+[22026.317477] psi_monitor: pressure high: cpu=70% mem=0% io=20% (thresh cpu=50 mem=50 io=50)
+[22026.318170] psi_monitor: logging top 13 tasks under pressure:
+[22026.318225] psi_monitor: pid=36785 comm=cpu_hog_0 psi_flag=20 oncpu=3 cputime(ms)=10195 rss(kB)=478928 io(kB)=0 score=290439
+[22026.318240] psi_monitor: pid=36786 comm=cpu_hog_1 psi_flag=4 oncpu=2 cputime(ms)=9161 rss(kB)=478928 io(kB)=0 score=285269
+[22026.318249] psi_monitor: pid=36787 comm=mem_hog_0 psi_flag=20 oncpu=1 cputime(ms)=5887 rss(kB)=478928 io(kB)=0 score=268899
+[22026.318258] psi_monitor: pid=36789 comm=io_hog_0 psi_flag=4 oncpu=0 cputime(ms)=1281 rss(kB)=478928 io(kB)=9688 score=255557
+[22026.318267] psi_monitor: pid=36738 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=11757 rss(kB)=132416 io(kB)=0 score=124993
+[22026.318275] psi_monitor: pid=36737 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=11629 rss(kB)=132420 io(kB)=0 score=124355
+[22026.318284] psi_monitor: pid=36729 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=11159 rss(kB)=4120 io(kB)=64 score=57919
+[22026.318293] psi_monitor: pid=36732 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=10335 rss(kB)=4120 io(kB)=0 score=53735
+[22026.318302] psi_monitor: pid=36730 comm=stress-ng psi_flag=4 oncpu=1 cputime(ms)=10261 rss(kB)=4256 io(kB)=0 score=53433
+[22026.318312] psi_monitor: pid=36728 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=10163 rss(kB)=4120 io(kB)=0 score=52875
+[22026.318322] psi_monitor: pid=36731 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=10129 rss(kB)=4256 io(kB)=0 score=52773
+[22026.318330] psi_monitor: pid=36736 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=2649 rss(kB)=1708 io(kB)=0 score=14099
+[22026.318342] psi_monitor: pid=35296 comm=kworker/0:1+events psi_flag=20 oncpu=0 cputime(ms)=214 rss(kB)=0 io(kB)=0 score=1070
+[22036.557493] psi_monitor: pressure high: cpu=71% mem=0% io=20% (thresh cpu=50 mem=50 io=50)
+[22036.557889] psi_monitor: logging top 15 tasks under pressure:
+[22036.557926] psi_monitor: pid=36785 comm=cpu_hog_0 psi_flag=20 oncpu=2 cputime(ms)=14565 rss(kB)=263420 io(kB)=0 score=204535
+[22036.557936] psi_monitor: pid=36786 comm=cpu_hog_1 psi_flag=4 oncpu=2 cputime(ms)=13355 rss(kB)=263420 io(kB)=0 score=198485
+[22036.557945] psi_monitor: pid=36737 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=15331 rss(kB)=132468 io(kB)=0 score=142889
+[22036.557952] psi_monitor: pid=36738 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=14475 rss(kB)=109500 io(kB)=0 score=127125
+[22036.557960] psi_monitor: pid=36729 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=13817 rss(kB)=4120 io(kB)=64 score=71209
+[22036.557968] psi_monitor: pid=36732 comm=stress-ng psi_flag=20 oncpu=1 cputime(ms)=13057 rss(kB)=4120 io(kB)=0 score=67345
+[22036.557976] psi_monitor: pid=36730 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=12939 rss(kB)=4256 io(kB)=0 score=66823
+[22036.557984] psi_monitor: pid=36731 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=12629 rss(kB)=4256 io(kB)=0 score=65273
+[22036.557991] psi_monitor: pid=36728 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=12561 rss(kB)=4120 io(kB)=0 score=64865
+[22036.557998] psi_monitor: pid=37033 comm=node psi_flag=20 oncpu=3 cputime(ms)=1421 rss(kB)=46268 io(kB)=0 score=30239
+[22036.558005] psi_monitor: pid=37043 comm=node psi_flag=4 oncpu=3 cputime(ms)=31 rss(kB)=46268 io(kB)=0 score=23289
+[22036.558013] psi_monitor: pid=36735 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=3245 rss(kB)=1884 io(kB)=4 score=17171
+[22036.558021] psi_monitor: pid=36736 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=3194 rss(kB)=1708 io(kB)=0 score=16824
+[22036.558034] psi_monitor: pid=35296 comm=kworker/0:1+events psi_flag=20 oncpu=0 cputime(ms)=216 rss(kB)=0 io(kB)=0 score=1080
+[22036.558044] psi_monitor: pid=18892 comm=kworker/1:1H+kblockd psi_flag=4 oncpu=1 cputime(ms)=29 rss(kB)=0 io(kB)=0 score=145
+[22046.797621] psi_monitor: pressure high: cpu=72% mem=0% io=21% (thresh cpu=50 mem=50 io=50)
+[22046.797949] psi_monitor: logging top 14 tasks under pressure:
+[22046.797974] psi_monitor: pid=36785 comm=cpu_hog_0 psi_flag=20 oncpu=3 cputime(ms)=18462 rss(kB)=228428 io(kB)=0 score=206524
+[22046.797985] psi_monitor: pid=36786 comm=cpu_hog_1 psi_flag=4 oncpu=3 cputime(ms)=16669 rss(kB)=228428 io(kB)=0 score=197559
+[22046.797993] psi_monitor: pid=36787 comm=mem_hog_0 psi_flag=4 oncpu=3 cputime(ms)=9124 rss(kB)=228428 io(kB)=0 score=159834
+[22046.798001] psi_monitor: pid=36788 comm=mem_hog_1 psi_flag=4 oncpu=0 cputime(ms)=9121 rss(kB)=228428 io(kB)=0 score=159819
+[22046.798008] psi_monitor: pid=36737 comm=stress-ng psi_flag=20 oncpu=2 cputime(ms)=17073 rss(kB)=148744 io(kB)=0 score=159737
+[22046.798022] psi_monitor: pid=36738 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=16550 rss(kB)=148760 io(kB)=0 score=157130
+[22046.798030] psi_monitor: pid=36729 comm=stress-ng psi_flag=4 oncpu=2 cputime(ms)=17177 rss(kB)=4120 io(kB)=64 score=88009
+[22046.798037] psi_monitor: pid=36728 comm=stress-ng psi_flag=20 oncpu=1 cputime(ms)=15642 rss(kB)=4120 io(kB)=0 score=80270
+[22046.798044] psi_monitor: pid=36730 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=15611 rss(kB)=4256 io(kB)=0 score=80183
+[22046.798052] psi_monitor: pid=36732 comm=stress-ng psi_flag=4 oncpu=3 cputime(ms)=14911 rss(kB)=4120 io(kB)=0 score=76615
+[22046.798060] psi_monitor: pid=36736 comm=stress-ng psi_flag=4 oncpu=0 cputime(ms)=3736 rss(kB)=1708 io(kB)=0 score=19534
+[22046.798073] psi_monitor: pid=36927 comm=kworker/u16:5+writeback psi_flag=4 oncpu=0 cputime(ms)=499 rss(kB)=0 io(kB)=0 score=2495
+[22046.798083] psi_monitor: pid=35296 comm=kworker/0:1+events psi_flag=20 oncpu=0 cputime(ms)=222 rss(kB)=0 io(kB)=0 score=1110
+[22046.798092] psi_monitor: pid=18892 comm=kworker/1:1H+kblockd psi_flag=4 oncpu=1 cputime(ms)=83 rss(kB)=0 io(kB)=0 score=415
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$

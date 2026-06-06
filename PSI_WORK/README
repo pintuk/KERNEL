@@ -1,1 +1,109 @@
+This work introduces an in-kernel PSI auto monitor aimed at improving
+root-cause visibility for resource pressure events in Linux systems.
+
+### Conference Papers
+1) Old: https://lpc.events/event/18/contributions/1884/attachments/1439/3069/LPC2024_PIntu_PSI.pdf 
+2) New: https://ossindia2026.sched.com/event/9bf0395048096b44ac9d55f8b863e074?iframe=no
+
+### Motivation
+
+PSI already provides an excellent mechanism to detect CPU, memory and
+I/O pressure and includes trigger-based notifications via pollable
+interfaces. However, it deliberately avoids attributing pressure to
+individual tasks.
+
+In real-world systems, this creates a gap: when a PSI trigger fires,
+users still need to determine *which tasks caused the stall* by combining
+multiple tools (top, meminfo, vmstat, perf, tracing, etc.), often after
+the event has already passed.
+
+This process becomes particularly difficult during:
+- transient bursts of pressure
+- system boot or early initialization
+- PREEMPT_RT or latency-sensitive workloads
+- heavily loaded embedded systems where user space is delayed
+
+### Proposal
+
+This patch introduces an optional in-kernel PSI auto monitor that:
+- periodically samples PSI signals
+- detects threshold breaches
+- captures top contributing tasks at that moment
+- emits trace events and kernel logs for analysis
+
+The design goal is **low-latency attribution at the source of truth**,
+without relying on user-space daemons or polling loops.
+
+### Why in-kernel?
+
+While similar logic can be implemented in user space, there are inherent
+limitations:
+
+- scheduling delays under high pressure
+- risk of missing short-lived spikes
+- dependency on continuous polling or daemons
+- difficulty deploying in early boot or minimal environments
+
+In contrast, the in-kernel approach:
+- observes PSI signals without scheduling latency
+- captures contributors exactly at threshold breach
+- works during early boot and degraded system states
+- avoids duplicating logic across multiple user-space tools
+- all cpu/mem/io data at single interface and same instance
+
+### Design Highlights
+
+- Does not modify PSI fast paths
+- Optional (CONFIG_PSI_AUTO_MONITOR)
+- Runtime configurable thresholds and interval
+- Uses existing kernel accounting (task runtime, RSS, I/O stats)
+- Provides structured tracepoints for post-processing
+- Lightweight and intended for diagnostic use
+
+### Experimental Validation
+
+The feature has been evaluated on multiple ARM64 platforms (Cortex-A53,
+A55) across different kernels and storage setups.
+
+Test scenarios include:
+- CPU/memory/IO stress workloads
+- system boot tracing (no external tools)
+- mixed workloads (ffmpeg, workqueues, userspace processes)
+- PREEMPT_RT cyclictest correlation
+
+Results show:
+- consistent identification of top resource contributors
+- improved root-cause visibility compared to user-space-only methods
+- ability to capture transient hotspots during boot and runtime
+- correlation of latency spikes with system pressure
+
+### Data and Reference
+
+Detailed results, logs and presentation material are available here:
+https://github.com/pintuk/KERNEL/tree/master/PSI_WORK
+
+### Open Questions (RFC)
+
+Feedback is especially appreciated on:
+
+- whether this functionality belongs in-kernel vs user-space
+- interface choice (sysfs vs tracefs/debugfs alternatives)
+- scoring heuristic (CPU/RSS/IO weighting)
+- potential reuse or extension of existing PSI interfaces
+- cgroup-aware extensions for future work
+
+### Future Work
+
+- finer-grained PSI window integration
+- IRQ pressure support
+- cgroup-based attribution
+- improved tracing/export interfaces
+- optional integration with user-space analysis tools
+
+Thanks for your time, and I would really appreciate feedback.
+
+Regards,
+Pintu
+Email: pintu.ping@gmail.com
+LinkedIn: www.linkedin.com/in/pintu-k-agarwal-b73a31b 
 

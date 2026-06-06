@@ -1,0 +1,66 @@
+
+debian@BeaglePlay:~/pintu/psi_work$ cat trace_report.txt
+CPU 0 is empty
+CPU 2 is empty
+CPU 3 is empty
+cpus=4
+     kworker/1:1-307455 [001] 194092.074586: psi_monitor_top_task: pid=239 comm=jbd2/mmcblk0p2- cpu_ms=31458 rss_kb=0 io_kb=510752 score=668042
+     kworker/1:1-307455 [001] 194092.128263: psi_monitor_top_task: pid=312853 comm=cpu_hog_0 cpu_ms=5557 rss_kb=344860 io_kb=0 score=200215
+     kworker/1:1-307455 [001] 194092.164219: psi_monitor_top_task: pid=312854 comm=cpu_hog_1 cpu_ms=5317 rss_kb=344860 io_kb=0 score=199015
+     kworker/1:1-307455 [001] 194092.188294: psi_monitor_top_task: pid=312855 comm=mem_hog_0 cpu_ms=3444 rss_kb=344860 io_kb=0 score=189650
+     kworker/1:1-307455 [001] 194092.216242: psi_monitor_top_task: pid=312857 comm=io_hog_0 cpu_ms=554 rss_kb=344860 io_kb=7016 score=182216
+     kworker/1:1-307455 [001] 194092.236290: psi_monitor_top_task: pid=312858 comm=io_hog_1 cpu_ms=492 rss_kb=344860 io_kb=6968 score=181858
+     kworker/1:1-307455 [001] 194092.249087: psi_monitor_top_task: pid=312841 comm=stress-ng cpu_ms=7388 rss_kb=132480 io_kb=0 score=103180
+     kworker/1:1-307455 [001] 194092.264279: psi_monitor_top_task: pid=312840 comm=stress-ng cpu_ms=7228 rss_kb=132256 io_kb=0 score=102268
+     kworker/1:1-307455 [001] 194092.284205: psi_monitor_top_task: pid=312894 comm=psi_cpu_hog cpu_ms=9328 rss_kb=0 io_kb=0 score=46640
+     kworker/1:1-307455 [001] 194092.300213: psi_monitor_top_task: pid=312834 comm=stress-ng cpu_ms=5980 rss_kb=3916 io_kb=0 score=31858
+     kworker/1:1-307455 [001] 194092.311567: psi_monitor_top_task: pid=312837 comm=stress-ng cpu_ms=5812 rss_kb=3916 io_kb=0 score=31018
+     kworker/1:1-307455 [001] 194092.328211: psi_monitor_top_task: pid=312833 comm=stress-ng cpu_ms=5740 rss_kb=4044 io_kb=0 score=30722
+     kworker/1:1-307455 [001] 194092.344178: psi_monitor_top_task: pid=312836 comm=stress-ng cpu_ms=5556 rss_kb=4052 io_kb=0 score=29806
+     kworker/1:1-307455 [001] 194092.360208: psi_monitor_top_task: pid=312835 comm=stress-ng cpu_ms=5483 rss_kb=4052 io_kb=0 score=29441
+     kworker/1:1-307455 [001] 194092.371423: psi_monitor_top_task: pid=60 comm=kswapd0 cpu_ms=3184 rss_kb=0 io_kb=0 score=15920
+     kworker/1:1-307455 [001] 194092.388191: psi_monitor_top_task: pid=311145 comm=kworker/u16:2+psi_hog_wq cpu_ms=1119 rss_kb=0 io_kb=6288 score=11883
+     kworker/1:1-307455 [001] 194092.400643: psi_monitor_top_task: pid=312843 comm=stress-ng cpu_ms=1547 rss_kb=1748 io_kb=4 score=8613
+     kworker/1:1-307455 [001] 194092.416480: psi_monitor_top_task: pid=307455 comm=kworker/1:1+events cpu_ms=977 rss_kb=0 io_kb=0 score=4885
+     kworker/1:1-307455 [001] 194102.572312: psi_monitor_top_task: pid=239 comm=jbd2/mmcblk0p2- cpu_ms=31743 rss_kb=0 io_kb=513912 score=672627
+     kworker/1:1-307455 [001] 194102.602736: psi_monitor_top_task: pid=312854 comm=cpu_hog_1 cpu_ms=9557 rss_kb=331572 io_kb=0 score=213571
+     kworker/1:1-307455 [001] 194102.628326: psi_monitor_top_task: pid=312853 comm=cpu_hog_0 cpu_ms=7948 rss_kb=331572 io_kb=0 score=205526
+     kworker/1:1-307455 [001] 194102.668315: psi_monitor_top_task: pid=312855 comm=mem_hog_0 cpu_ms=5382 rss_kb=331572 io_kb=0 score=192696
+     kworker/1:1-307455 [001] 194102.712311: psi_monitor_top_task: pid=312857 comm=io_hog_0 cpu_ms=663 rss_kb=331572 io_kb=8720 score=177821
+     kworker/1:1-307455 [001] 194102.744720: psi_monitor_top_task: pid=312840 comm=stress-ng cpu_ms=10409 rss_kb=127600 io_kb=0 score=115845
+     kworker/1:1-307455 [001] 194102.772663: psi_monitor_top_task: pid=312841 comm=stress-ng cpu_ms=9684 rss_kb=132464 io_kb=0 score=114652
+     kworker/1:1-307455 [001] 194102.800355: psi_monitor_top_task: pid=312894 comm=psi_cpu_hog cpu_ms=18633 rss_kb=0 io_kb=0 score=93165
+     kworker/1:1-307455 [001] 194102.811850: psi_monitor_top_task: pid=312837 comm=stress-ng cpu_ms=8454 rss_kb=3916 io_kb=0 score=44228
+     kworker/1:1-307455 [001] 194102.823614: psi_monitor_top_task: pid=312835 comm=stress-ng cpu_ms=8056 rss_kb=4052 io_kb=0 score=42306
+     kworker/1:1-307455 [001] 194102.835233: psi_monitor_top_task: pid=312833 comm=stress-ng cpu_ms=8031 rss_kb=4044 io_kb=0 score=42177
+     kworker/1:1-307455 [001] 194102.846775: psi_monitor_top_task: pid=312836 comm=stress-ng cpu_ms=7980 rss_kb=4052 io_kb=0 score=41926
+     kworker/1:1-307455 [001] 194102.858508: psi_monitor_top_task: pid=312834 comm=stress-ng cpu_ms=7963 rss_kb=3916 io_kb=0 score=41773
+     kworker/1:1-307455 [001] 194102.870314: psi_monitor_top_task: pid=312913 comm=node cpu_ms=877 rss_kb=41328 io_kb=408 score=25457
+     kworker/1:1-307455 [001] 194102.881921: psi_monitor_top_task: pid=312844 comm=stress-ng cpu_ms=1675 rss_kb=1748 io_kb=0 score=9249
+     kworker/1:1-307455 [001] 194102.893507: psi_monitor_top_task: pid=312843 comm=stress-ng cpu_ms=1644 rss_kb=1748 io_kb=4 score=9098
+     kworker/1:1-307455 [001] 194102.904974: psi_monitor_top_task: pid=307455 comm=kworker/1:1+events cpu_ms=1196 rss_kb=0 io_kb=0 score=5980
+     kworker/1:1-307455 [001] 194113.051632: psi_monitor_top_task: pid=312854 comm=cpu_hog_1 cpu_ms=11830 rss_kb=486784 io_kb=0 score=302542
+     kworker/1:1-307455 [001] 194113.068361: psi_monitor_top_task: pid=312853 comm=cpu_hog_0 cpu_ms=10735 rss_kb=486784 io_kb=0 score=297067
+     kworker/1:1-307455 [001] 194113.079961: psi_monitor_top_task: pid=312856 comm=mem_hog_1 cpu_ms=6681 rss_kb=486784 io_kb=0 score=276797
+     kworker/1:1-307455 [001] 194113.096329: psi_monitor_top_task: pid=312894 comm=psi_cpu_hog cpu_ms=26634 rss_kb=0 io_kb=0 score=133170
+     kworker/1:1-307455 [001] 194113.107877: psi_monitor_top_task: pid=312841 comm=stress-ng cpu_ms=11982 rss_kb=132456 io_kb=0 score=126138
+     kworker/1:1-307455 [001] 194113.119568: psi_monitor_top_task: pid=312835 comm=stress-ng cpu_ms=10085 rss_kb=4052 io_kb=0 score=52451
+     kworker/1:1-307455 [001] 194113.131668: psi_monitor_top_task: pid=312833 comm=stress-ng cpu_ms=9798 rss_kb=4044 io_kb=0 score=51012
+     kworker/1:1-307455 [001] 194113.143162: psi_monitor_top_task: pid=312834 comm=stress-ng cpu_ms=9775 rss_kb=3916 io_kb=0 score=50833
+     kworker/1:1-307455 [001] 194113.154753: psi_monitor_top_task: pid=307455 comm=kworker/1:1+events cpu_ms=1404 rss_kb=0 io_kb=0 score=7020
+     kworker/1:1-307455 [001] 194123.291079: psi_monitor_top_task: pid=239 comm=jbd2/mmcblk0p2- cpu_ms=32324 rss_kb=0 io_kb=520040 score=681660
+     kworker/1:1-307455 [001] 194123.302840: psi_monitor_top_task: pid=312894 comm=psi_cpu_hog cpu_ms=36599 rss_kb=0 io_kb=0 score=182995
+     kworker/1:1-307455 [001] 194123.314151: psi_monitor_top_task: pid=312854 comm=cpu_hog_1 cpu_ms=15582 rss_kb=186056 io_kb=0 score=170938
+     kworker/1:1-307455 [001] 194123.326410: psi_monitor_top_task: pid=312853 comm=cpu_hog_0 cpu_ms=15158 rss_kb=186056 io_kb=0 score=168818
+     kworker/1:1-307455 [001] 194123.338659: psi_monitor_top_task: pid=312840 comm=stress-ng cpu_ms=15063 rss_kb=132412 io_kb=0 score=141521
+     kworker/1:1-307455 [001] 194123.350721: psi_monitor_top_task: pid=312856 comm=mem_hog_1 cpu_ms=8622 rss_kb=186056 io_kb=0 score=136138
+     kworker/1:1-307455 [001] 194123.362811: psi_monitor_top_task: pid=312841 comm=stress-ng cpu_ms=13234 rss_kb=132456 io_kb=0 score=132398
+     kworker/1:1-307455 [001] 194123.375056: psi_monitor_top_task: pid=312857 comm=io_hog_0 cpu_ms=880 rss_kb=186056 io_kb=11960 score=109388
+     kworker/1:1-307455 [001] 194123.387260: psi_monitor_top_task: pid=312833 comm=stress-ng cpu_ms=13009 rss_kb=4044 io_kb=0 score=67067
+     kworker/1:1-307455 [001] 194123.399211: psi_monitor_top_task: pid=312844 comm=stress-ng cpu_ms=1888 rss_kb=1748 io_kb=0 score=10314
+     kworker/1:1-307455 [001] 194123.411185: psi_monitor_top_task: pid=312843 comm=stress-ng cpu_ms=1863 rss_kb=1748 io_kb=4 score=10193
+     kworker/1:1-307455 [001] 194123.423022: psi_monitor_top_task: pid=307455 comm=kworker/1:1+events cpu_ms=1523 rss_kb=0 io_kb=0 score=7615
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
+debian@BeaglePlay:~/pintu/psi_work$
