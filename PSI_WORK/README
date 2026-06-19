@@ -2,8 +2,9 @@ This work introduces an in-kernel PSI auto monitor aimed at improving
 root-cause visibility for resource pressure events in Linux systems.
 
 ### Conference Papers
-1) Old: https://lpc.events/event/18/contributions/1884/attachments/1439/3069/LPC2024_PIntu_PSI.pdf 
-2) New: https://ossindia2026.sched.com/event/9bf0395048096b44ac9d55f8b863e074?iframe=no
+1) New: https://ossindia2026.sched.com/event/9bf0395048096b44ac9d55f8b863e074?iframe=no
+PDF: https://hosted-files.sched.co/ossindia2026/19/OSS-IND-26-PSI-Auto-Monitor.pdf 
+2) Old: https://lpc.events/event/18/contributions/1884/attachments/1439/3069/LPC2024_PIntu_PSI.pdf 
 
 ### Motivation
 
