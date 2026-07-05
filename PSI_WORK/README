@@ -93,6 +93,32 @@ Feedback is especially appreciated on:
 - potential reuse or extension of existing PSI interfaces
 - cgroup-aware extensions for future work
 
+### How to Test
+- Clone linux-next (or any kernel haveing PSI)
+- Apply the patch (inside patches folder) using:
+  - git am -s 0001-kernel-6-19-psi-Introduce-in-kernel-PSI-auto-monitor.patch
+  - git log to make sure the patch applied properly
+- make menuconfig and enable the config:
+  - CONFIG_PSI=y
+  - CONFIG_PSI_AUTO_MONITOR=y
+  - cat .config | grep PSI (Make sure that the configs are enabled)
+- Build the kernel normally
+- Flash the kernel image on your device/setup
+- dmesg | grep psi (To confirm that PSI is enabled)
+- Verify : cat /proc/pressure/*
+- Verify : cat /sys/kernel/psi_monitor/* (This confirms psi-monitor interface is available)
+- If you want to change the load percentage, do this:
+  - echo VALUE > /sys/kernel/psi_monitor/cpu_thresh (Value between 1 to 100) for cpu load usage
+  - echo VALUE > /sys/kernel/psi_monitor/mem_thresh (Value between 1 to 100) for mem load usage
+  - echo VALUE > /sys/kernel/psi_monitor/io_thresh (Value between 1 to 100) for IO load usage
+  - Best is to keep these values as 50 for all and run scenarios to simulate 50% load on system
+  - To monitor usage during boot time itself, hard-core these values in code and build the kernel.
+    (These should start printing even before userspace comes up and shows kernel usage)
+- To load the system you can use stress-ng (sudo apt-get install stress-ng)
+  - Or you can use my test scripts under test_scripts folder
+- You can even test real time workload by enabling PREEMPT_RT config and real-time thread latencies.
+- You can even test this on QEMU environment
+
 ### Future Work
 
 - finer-grained PSI window integration
