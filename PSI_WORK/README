@@ -52,6 +52,24 @@ In contrast, the in-kernel approach:
 - avoids duplicating logic across multiple user-space tools
 - all cpu/mem/io data at single interface and same instance
 
+Few More Points:
+- Get kernel stats early during boot_time before userspace comes up.
+   -> Set slightly lower threshold and boot stats (helps in analysing boot time)
+- No user intervention or continuous polling or daemons needed
+  (Just enable config and start auto monitoring)
+- userspace scheduling delays under high pressure
+- risk of missing short-lived spikes
+- capturing details as soon as pressure hits and at same timestamp
+- useful for analysing real-time latency workload.
+- useful for minimal environment like initramfs or busybox
+
+The motivation is not to replace existing PSI interfaces or the ability
+to build userspace monitoring tools.
+The goal is attribution at the moment pressure thresholds are crossed.
+A userspace implementation observes the system after being scheduled,
+whereas the in-kernel implementation captures contributors at the point
+where pressure is detected.
+
 ### Design Highlights
 
 - Does not modify PSI fast paths
